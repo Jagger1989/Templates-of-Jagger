@@ -1,0 +1,5 @@
+﻿  LearnDesignPattern.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(1415): error C2440: “<function-style-cast>”: 无法从“const std::shared_ptr<test::B>”转换为“std::shared_ptr<test::A>”
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\memory(1415): note: 无构造函数可以接受源类型，或构造函数重载决策不明确
+  c:\users\jagger\source\repos\learndesignpattern\learndesignpattern\learndesignpattern.cpp(31): note: 参见对正在编译的函数 模板 实例化“std::shared_ptr<test::A> &std::shared_ptr<test::A>::operator =<test::B>(const std::shared_ptr<test::B> &) noexcept”的引用
+  c:\users\jagger\source\repos\learndesignpattern\learndesignpattern\learndesignpattern.cpp(31): note: 参见对正在编译的函数 模板 实例化“std::shared_ptr<test::A> &std::shared_ptr<test::A>::operator =<test::B>(const std::shared_ptr<test::B> &) noexcept”的引用
