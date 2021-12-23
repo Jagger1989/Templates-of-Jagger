@@ -10,6 +10,7 @@ public:
     {
         std::cout << _msg.c_str() << std::endl;
     }
+
 private:
 
 };

@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="LearnDesignPattern.cpp" />
+    <ClCompile Include="src\Utility\FinishAction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\DesignPattern\Factory - 副本 (10).h" />
@@ -176,11 +177,28 @@
     <ClInclude Include="src\DesignPattern\Pattern_Factory_2.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Observer.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Singleton.h" />
+    <ClInclude Include="src\DesignPattern\Pattern_Singleton_2.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Strategy.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Visitor.h" />
-    <ClInclude Include="src\Template\Template_1.h" />
-    <ClInclude Include="src\Template\Template_2.h" />
+    <ClInclude Include="src\Template\Template_SharedPointor.h" />
+    <ClInclude Include="src\Template\Template_Thread - 副本 (10).h" />
+    <ClInclude Include="src\Template\Template_Thread - 副本 (11).h" />
+    <ClInclude Include="src\Template\Template_Thread - 副本 (12).h" />
+    <ClInclude Include="src\Template\Template_Thread - 副本 (13).h" />
+    <ClInclude Include="src\Template\Template_Mutex.h" />
+    <ClInclude Include="src\Template\Template_Handle.h" />
+    <ClInclude Include="src\Template\Template_TypeCast.h" />
+    <ClInclude Include="src\Template\FindFile_FindDirectory.h" />
+    <ClInclude Include="src\Template\TemplateJsonUse.hpp" />
+    <ClInclude Include="src\Template\Template_Thread - 副本 (7).h" />
+    <ClInclude Include="src\Template\Template_Thread - 副本 (8).h" />
+    <ClInclude Include="src\Template\Template_Thread - 副本 (9).h" />
+    <ClInclude Include="src\Template\Template_Thread-0.h" />
+    <ClInclude Include="src\Template\Template_Thread.h" />
+    <ClInclude Include="src\Template\utility.hpp" />
     <ClInclude Include="src\Utility\common.h" />
+    <ClInclude Include="src\Utility\FinishAction.h" />
+    <ClInclude Include="src\Utility\json.hpp" />
     <ClInclude Include="src\Utility\Log.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

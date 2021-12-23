@@ -93,6 +93,7 @@ private:
 };
 
 // https://www.bilibili.com/video/BV1nE41197nK?p=2&spm_id_from=pageDriver
+
 extern "C" long __cdecl _InterlockedCompareExchange(long volatile * Dest, long Exchange, long Comp);
 #pragma intrinsic (_InterlockedCompareExchange)
 

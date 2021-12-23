@@ -30,6 +30,9 @@
     <ClCompile Include="LearnDesignPattern.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\Utility\FinishAction.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\DesignPattern\Factory - 副本 (2).h">
@@ -110,11 +113,62 @@
     <ClInclude Include="src\Utility\Log.h">
       <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="src\Template\Template_2.h">
+    <ClInclude Include="src\Template\Template_SharedPointor.h">
       <Filter>Template</Filter>
     </ClInclude>
-    <ClInclude Include="src\Template\Template_1.h">
+    <ClInclude Include="src\Template\Template_Thread - 副本 (7).h">
       <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Thread - 副本 (8).h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Thread - 副本 (9).h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Thread - 副本 (10).h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Thread - 副本 (11).h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Thread - 副本 (12).h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Thread - 副本 (13).h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Thread.h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Mutex.h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Pattern_Singleton_2.h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Handle.h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_TypeCast.h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Thread-0.h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\FindFile_FindDirectory.h">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\utility.hpp">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\json.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\TemplateJsonUse.hpp">
+      <Filter>Template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\FinishAction.h">
+      <Filter>common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

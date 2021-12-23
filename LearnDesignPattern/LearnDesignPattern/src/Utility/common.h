@@ -7,6 +7,10 @@
 #include <map>
 #include <memory>
 #include <assert.h>
+#include <deque>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
 
 #include "Log.h"
 
