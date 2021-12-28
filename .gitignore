@@ -302,3 +302,6 @@ __pycache__/
 
 .vscode/
 Application/configs/platforms/android_gradle/local.properties
+
+#Special  file
+*LearnDesignPattern.cpp

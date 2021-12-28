@@ -116,9 +116,6 @@
     <ClInclude Include="src\Template\Template_SharedPointor.h">
       <Filter>Template</Filter>
     </ClInclude>
-    <ClInclude Include="src\Template\Template_Thread - 副本 (7).h">
-      <Filter>Template</Filter>
-    </ClInclude>
     <ClInclude Include="src\Template\Template_Thread - 副本 (8).h">
       <Filter>Template</Filter>
     </ClInclude>
@@ -169,6 +166,9 @@
     </ClInclude>
     <ClInclude Include="src\Utility\FinishAction.h">
       <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_std_chrono.hpp">
+      <Filter>Template</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
