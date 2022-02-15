@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{da18e004-e464-4980-b57f-efac9759a314}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ohter">
+      <UniqueIdentifier>{c968021b-f2bc-425e-bdc4-8f48904e3fe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DesignPattern">
+      <UniqueIdentifier>{4858ec43-6f79-49fb-982e-026fe58472c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Boost">
+      <UniqueIdentifier>{d94163a6-f0e9-4219-87cb-c52106038fc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="STL">
+      <UniqueIdentifier>{4a572edd-58fb-4f9c-8e4a-a5f253a8703b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LearnDesignPattern.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility\FinishAction.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (2).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (3).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (4).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (5).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (6).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (7).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (8).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (9).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (10).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (11).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (12).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (13).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (14).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (15).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Factory - 副本 (16).h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Pattern_Bridge.h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Pattern_Builder.h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Pattern_Decoration.h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Pattern_Factory.h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Pattern_Factory_2.h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Pattern_Observer.h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Pattern_Singleton.h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Pattern_Strategy.h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Pattern_Visitor.h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\Log.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_SharedPointor.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Thread.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Mutex.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DesignPattern\Pattern_Singleton_2.h">
+      <Filter>DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Handle.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_TypeCast.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Thread-0.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\FindFile_FindDirectory.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\utility.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\json.hpp">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility\FinishAction.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_std_chrono.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Thread2.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Final.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Functor.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Vector.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_LLA_Calculate.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_TODO.h">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_JsonUse.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_String.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Move.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

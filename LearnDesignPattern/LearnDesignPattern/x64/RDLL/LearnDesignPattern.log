@@ -1,0 +1,5 @@
+﻿  LearnDesignPattern.cpp
+d:\workspace--visualstudio\templates-of-jagger\learndesignpattern\learndesignpattern\src\template\template_typecast.h(69): warning C4311: “reinterpret_cast”: 从“const char *”到“int”的指针截断
+  FinishAction.cpp
+  正在生成代码...
+  LearnDesignPattern.vcxproj -> D:\WorkSpace--VisualStudio\Templates-of-Jagger\LearnDesignPattern\x64\RDLL\LearnDesignPattern.dll
