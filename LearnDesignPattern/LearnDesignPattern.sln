@@ -9,6 +9,8 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		RDLL|x64 = RDLL|x64
+		RDLL|x86 = RDLL|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
@@ -17,6 +19,10 @@ Global
 		{E6FDBC59-1C2D-4462-AE1B-EBB33B341F7E}.Debug|x64.Build.0 = Debug|x64
 		{E6FDBC59-1C2D-4462-AE1B-EBB33B341F7E}.Debug|x86.ActiveCfg = Debug|Win32
 		{E6FDBC59-1C2D-4462-AE1B-EBB33B341F7E}.Debug|x86.Build.0 = Debug|Win32
+		{E6FDBC59-1C2D-4462-AE1B-EBB33B341F7E}.RDLL|x64.ActiveCfg = RDLL|x64
+		{E6FDBC59-1C2D-4462-AE1B-EBB33B341F7E}.RDLL|x64.Build.0 = RDLL|x64
+		{E6FDBC59-1C2D-4462-AE1B-EBB33B341F7E}.RDLL|x86.ActiveCfg = RDLL|Win32
+		{E6FDBC59-1C2D-4462-AE1B-EBB33B341F7E}.RDLL|x86.Build.0 = RDLL|Win32
 		{E6FDBC59-1C2D-4462-AE1B-EBB33B341F7E}.Release|x64.ActiveCfg = Release|x64
 		{E6FDBC59-1C2D-4462-AE1B-EBB33B341F7E}.Release|x64.Build.0 = Release|x64
 		{E6FDBC59-1C2D-4462-AE1B-EBB33B341F7E}.Release|x86.ActiveCfg = Release|Win32

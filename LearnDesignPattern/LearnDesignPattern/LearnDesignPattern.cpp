@@ -1,16 +1,14 @@
 ﻿#include "src/Utility/common.h"
 #include <iostream>
-#include "./src/DesignPattern/Pattern_Decoration.h"
-#include "src/DesignPattern/Pattern_Singleton.h"
-#include "src/DesignPattern/Pattern_Visitor.h"
-//#include "src/Pattern_Bridge.h"
-#include "src/DesignPattern/Pattern_Factory.h"
-#include "src/Template/Template_TypeCast.h"
-#include "src/Template/Template_SharedPointor.h"
-#include "src/Template/utility.hpp"
+
+#include "src/Template//Template_LLA_Calculate.h"
+#include "src/Template//Template_TODO.h"
+#include "src/Template//Template_Move.hpp"
+#include "src/Template//Template_String.hpp"
 
 int main()
 {
-    testSharedPtr();
+    //testMove();
+    testString();
     system("pause");
 }

@@ -126,4 +126,39 @@ void testSharedPtr()                                                            
                                                                                             //*
 // *****************************************************************************************//*
 
+// weak_ptr
+// 用于解决循环引用造成内存泄露的问题
+
+class SharedPtrTest2;
+class SharedPtrTest1 {
+public:
+    void printRefCount()
+    {
+        std::cout << m_ptr1.use_count() << std::endl;
+    }
+
+    ~SharedPtrTest1()
+    {
+
+    }
+private:
+    std::shared_ptr<SharedPtrTest2> m_ptr1;
+};
+
+class SharedPtrTest2 {
+public:
+    void printRefCount()
+    {
+        std::cout << m_ptr1.use_count() << std::endl;
+    }
+private:
+    std::shared_ptr<SharedPtrTest1> m_ptr1;
+};
+
+void testSharedPtr5()
+{
+    shared_ptr< SharedPtrTest1> p1 = std::shared_ptr< SharedPtrTest1>(new SharedPtrTest1);
+    shared_ptr< SharedPtrTest2> p2 = std::shared_ptr< SharedPtrTest2>(new SharedPtrTest2);
+}
+
 #endif // !TEMPLATE_SHARED_POINTOR_H
