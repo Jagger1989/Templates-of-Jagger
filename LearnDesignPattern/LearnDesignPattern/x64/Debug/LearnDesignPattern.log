@@ -1,5 +1,0 @@
-﻿  LearnDesignPattern.cpp
-d:\workspace--visualstudio\templates-of-jagger\learndesignpattern\learndesignpattern\src\utility\log.h(17): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-  FinishAction.cpp
-  正在生成代码...
-  LearnDesignPattern.vcxproj -> D:\WorkSpace--VisualStudio\Templates-of-Jagger\LearnDesignPattern\x64\Debug\LearnDesignPattern.exe
