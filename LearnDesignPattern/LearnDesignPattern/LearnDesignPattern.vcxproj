@@ -131,8 +131,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\environment\boost_1_78_0;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\environment\boost_1_78_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>F:\environment\boost_1_66_0;D:\environment\boost_1_78_0;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\environment\boost_1_66_0\stage\lib;D:\environment\boost_1_78_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -249,6 +250,8 @@
     <ClInclude Include="src\DesignPattern\Pattern_Singleton_2.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Strategy.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Visitor.h" />
+    <ClInclude Include="src\TemplatePrograming\Template_1.h" />
+    <ClInclude Include="src\Template\Template_Deque.h" />
     <ClInclude Include="src\Template\Template_Move.hpp" />
     <ClInclude Include="src\Template\Template_SharedPointor.h" />
     <ClInclude Include="src\Template\Template_String.hpp" />

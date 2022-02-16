@@ -28,6 +28,9 @@
     <Filter Include="STL">
       <UniqueIdentifier>{4a572edd-58fb-4f9c-8e4a-a5f253a8703b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="TemplatePrograming">
+      <UniqueIdentifier>{b2545e8d-6a24-4e4a-bb33-e05c8f99feae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LearnDesignPattern.cpp">
@@ -177,6 +180,12 @@
       <Filter>STL</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Move.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TemplatePrograming\Template_1.h">
+      <Filter>TemplatePrograming</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\Template_Deque.h">
       <Filter>STL</Filter>
     </ClInclude>
   </ItemGroup>
