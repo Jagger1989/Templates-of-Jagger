@@ -250,6 +250,7 @@
     <ClInclude Include="src\DesignPattern\Pattern_Singleton_2.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Strategy.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Visitor.h" />
+    <ClInclude Include="src\STL\containers.hpp" />
     <ClInclude Include="src\TemplatePrograming\Template_1.h" />
     <ClInclude Include="src\Template\Template_Deque.h" />
     <ClInclude Include="src\Template\Template_Move.hpp" />

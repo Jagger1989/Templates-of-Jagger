@@ -7,10 +7,10 @@
 #include "src/Template/Template_String.hpp"
 #include "src/TemplatePrograming/Template_1.h"
 #include "src/Template/Template_Vector.h"
-
+#include "src/STL/containers.hpp"
 int main()
 {
     //testMove();
-    testVector();
+    testSTLContainer();
     system("pause");
 }

@@ -25,11 +25,14 @@
     <Filter Include="Boost">
       <UniqueIdentifier>{d94163a6-f0e9-4219-87cb-c52106038fc1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="STL">
-      <UniqueIdentifier>{4a572edd-58fb-4f9c-8e4a-a5f253a8703b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="TemplatePrograming">
       <UniqueIdentifier>{b2545e8d-6a24-4e4a-bb33-e05c8f99feae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OldTemplate">
+      <UniqueIdentifier>{4a572edd-58fb-4f9c-8e4a-a5f253a8703b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="STL">
+      <UniqueIdentifier>{39599514-36c6-4b89-99ce-890240f142cb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -120,31 +123,31 @@
       <Filter>common</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_SharedPointor.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Thread.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Mutex.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\DesignPattern\Pattern_Singleton_2.h">
       <Filter>DesignPattern</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Handle.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_TypeCast.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Thread-0.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\FindFile_FindDirectory.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\utility.hpp">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Utility\json.hpp">
       <Filter>common</Filter>
@@ -153,39 +156,42 @@
       <Filter>common</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_std_chrono.hpp">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Thread2.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Final.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Functor.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Vector.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_LLA_Calculate.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_TODO.h">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_JsonUse.hpp">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_String.hpp">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Move.hpp">
-      <Filter>STL</Filter>
+      <Filter>OldTemplate</Filter>
     </ClInclude>
     <ClInclude Include="src\TemplatePrograming\Template_1.h">
       <Filter>TemplatePrograming</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Deque.h">
+      <Filter>OldTemplate</Filter>
+    </ClInclude>
+    <ClInclude Include="src\STL\containers.hpp">
       <Filter>STL</Filter>
     </ClInclude>
   </ItemGroup>
