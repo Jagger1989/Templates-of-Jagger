@@ -29,7 +29,7 @@ void testFunctor1()
     myFunc("Hello");
 
     Func("testFunctor1");
-    testffff(Func("testFunctor1"));
+    testffff(Func("testFunctor1")); // 看似普通函数调用并传参，实则调用构造函数并传参，传入testffff的是对象
 }
 
 // 应用场景

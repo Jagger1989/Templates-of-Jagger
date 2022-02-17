@@ -10,7 +10,7 @@ using namespace std;
 
 /*
 OO object-oriented  面向对象
-GP generic paradigm 泛型编程
+GP generic programming 泛型编程
 
 STL六大部件(参见testSTLContainer())：
     容器  (Containers) 存储数据               vi
@@ -38,8 +38,10 @@ void testSTLContainer()
     // allocator<int>指明每次分配int大小内存，不写使用默认分配器
     // 将数组ia的首地址和尾地址作为参数传入，将vi初始化为27, 210, 12, 47, 109, 83
     vector<int, allocator<int> > vi(ia, ia + 6);
-    //cout << count_if(vi.begin(), vi.end(), not1(bind2nd(less<int>(), 40))) << endl;
 
+    // 排序
+    ::sort(vi.begin(), vi.end());
+    //cout << count_if(vi.begin(), vi.end(), not1(bind2nd(less<int>(), 40))) << endl;
     // foreach可以用于任何容器
     for (int i : {1, 2, 3})
     {
@@ -62,5 +64,19 @@ void testSTLContainer()
         Unordered Set/Multiset
         Unordered Map/Multmap
 */
+
+#include <list>
+
+void testList()
+{
+    int arr[] = {3,1,2,3,4,2};
+    list<int> list1(arr, arr+3);
+    list1.sort();
+    //::sort(list1.begin(), list1.end()); // ::sort不支持list
+    for (auto o : list1)
+    {
+        cout << o << endl;
+    }    
+}
 
 #endif // !CONTAINERS_HPP

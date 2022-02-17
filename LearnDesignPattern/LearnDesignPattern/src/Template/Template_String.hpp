@@ -20,4 +20,56 @@ void testString()
 
 }
 
+void testChar()
+{
+    // 初始化char*
+    char pp[] = "asas";
+    char* p = (char*)malloc(sizeof(char) * 100);
+    p = pp;
+    //strcpy(p, "asdfasdf");
+    //strcpy(p, pp);
+    printf("%s\n", p);
+    delete p;
+
+    // memset
+    // 将p1(char*)的前p3(int)个字符设置为p2(int)
+    char* ppp = (char*)malloc(sizeof(char)* 100);
+    ppp = pp;
+    memset(ppp, 'a', 2);
+    printf("%s\n", ppp);
+    puts(ppp);
+    delete ppp;
+
+    // strcpy
+    char* p11 = (char*)malloc(sizeof(char) * 100);
+    strcpy(p11, "12345");
+    int length = (int)strlen(p11);
+    printf("length = %d\n", length);
+    delete p11;
+
+    //memcpy();
+    //memmove();
+    //strcat();
+    //strncat();
+
+    //// 大小写敏感
+    //memcmp();
+    //strcmp();
+    //strncmp();
+
+    //// 大小写不敏感
+    //strcasecmp();
+    //strncasecmp();
+
+    //// 正反向查询
+    //strchar();
+    //strrchr();
+    //strstr();
+
+    //// 分割字符串
+    //strtok();
+    //strtok_r();
+
+}
+
 #endif // !TEMPLATE_STRING_H

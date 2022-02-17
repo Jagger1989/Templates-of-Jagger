@@ -9,6 +9,9 @@
 #include <math.h>
 #include <boost/algorithm/algorithm.hpp>
 
+// 模板类在实例化时必须指明类型
+// 模板函数可以推导
+
 // 原型模板，必须有
 // typename T2 = std::vector<T1>默认模板实参
 template<typename T1, typename T2 = std::vector<T1> > // 这里连续的尖括号必须有空格，否则可能会与>>流操作符混淆
