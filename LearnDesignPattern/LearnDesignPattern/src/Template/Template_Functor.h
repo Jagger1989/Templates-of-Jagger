@@ -3,6 +3,8 @@
 
 #include "../Utility/common.h"
 #include <algorithm>
+using namespace std;
+
 // 仿函数
 class Func {
 public:
@@ -53,8 +55,9 @@ void testFunctor2()
 {
     // count_if->#include <algorithm>
     g_maxLength = 10;
+    // count_if第三个参数的函数必须有一个参数的，否则编译报错,参数类型错会编译报错
     int ret = count_if(strlist.begin(), strlist.end(), LengthIsLessThan);
-    std::cout << "testFunctor2 = " << ret << endl;
+    std::cout << "testFunctor2 = " << ret << std::endl;
 }
 
 // 用仿函数实现
@@ -75,7 +78,7 @@ private:
 void testFunctor3()
 {
     int ret = count_if(strlist.begin(), strlist.end(), Functor(10));
-    std::cout << "testFunctor3 = " << ret << endl;
+    std::cout << "testFunctor3 = " << ret << std::endl;
 }
 
 

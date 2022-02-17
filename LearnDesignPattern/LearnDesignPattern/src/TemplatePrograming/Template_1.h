@@ -35,6 +35,11 @@ public:
     }
 };
 
+//对MyClass进行特化，当为指针时
+template<typename T1, typename T2> class MyClass<T1*, T2*> {
+
+};
+
 //对MyClass进行偏特化
 template<typename T1>
 class MyClass< T1, int>
