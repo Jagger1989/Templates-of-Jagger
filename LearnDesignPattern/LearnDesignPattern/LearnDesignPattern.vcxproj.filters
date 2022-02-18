@@ -44,51 +44,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (2).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (3).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (4).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (5).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (6).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (7).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (8).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (9).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (10).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (11).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (12).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (13).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (14).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (15).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (16).h">
-      <Filter>DesignPattern</Filter>
-    </ClInclude>
     <ClInclude Include="src\DesignPattern\Pattern_Bridge.h">
       <Filter>DesignPattern</Filter>
     </ClInclude>

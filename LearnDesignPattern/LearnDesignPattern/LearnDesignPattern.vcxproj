@@ -225,21 +225,6 @@
     <ClCompile Include="src\Utility\FinishAction.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (10).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (11).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (12).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (13).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (14).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (15).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (16).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (2).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (3).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (4).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (5).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (6).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (7).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (8).h" />
-    <ClInclude Include="src\DesignPattern\Factory - 副本 (9).h" />
     <ClInclude Include="src\DesignPattern\Pattern_Bridge.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Builder.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Decoration.h" />
