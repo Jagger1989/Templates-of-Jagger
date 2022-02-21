@@ -84,4 +84,11 @@ int testTemplate1()
     return 0;
 }
 
+//template<int N>
+//class TestMetaProgram {
+//    public£º
+//
+//        int x = N;
+//};
+
 #endif // TEMPLATE_1_H

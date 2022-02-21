@@ -29,19 +29,20 @@ class MyFunctor {
 public:
     MyFunctor(int x) : m_v(x){}
 
-    void operator()()
+    void operator()(int y)
     {
-        cout << m_v << endl;
+        cout << m_v << endl << y << endl;
+        cout << m_v + y << endl;
     }
 
 private:
-    int m_v;
+    const int m_v;
 };
 
 template<typename Fun>
 void tempppp(Fun func)
 {
-    func();
+    func(1);
 }
 
 template <typename T>
@@ -49,13 +50,18 @@ T asdfasf(T x)
 {
     return x;
 }
-
+#include <xmemory>
 void testTemp()
 {
-    MyFunctor mf(10);
-    tempppp(mf);
-    asdfasf(Temp(1));
+    //const MyFunctor mf(10);
+    //tempppp(mf);
+    //asdfasf(Temp(1));
+    //int arr[] = { 1,3,4 };
+    //int x = end(arr) - begin(arr);
+    //cout << x << endl;
+    vector<int> list = {12,3123,14,1};
+    list.shrink_to_fit();
+    cout << list.capacity() << endl;
 }
-
 
 

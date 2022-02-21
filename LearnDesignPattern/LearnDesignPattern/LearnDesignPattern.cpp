@@ -3,12 +3,13 @@
 
 #include "src/Template/Template_String.hpp"
 #include "src/Template/Template_Functor.h"
+#include "src/TemplatePrograming/Template_1.h"
 #include "src/STL/containers.hpp"
 #include "Temp.hpp"
 int main()
 {
     //testChar();
-    testFunctor2();
+    testTemp();
     system("pause");
 }
 

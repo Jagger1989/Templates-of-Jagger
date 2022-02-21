@@ -79,4 +79,11 @@ void testList()
     }    
 }
 
+void testAllocator()
+{
+    // STL底层开辟内存方式（new的底层）
+    int *p = allocator<int>().allocate(512, (int*)0);
+    allocator<int>().deallocate(p, 512);
+}
+
 #endif // !CONTAINERS_HPP
