@@ -152,5 +152,11 @@
     <ClInclude Include="Temp.hpp">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="src\STL\custom_queue.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\STL\custom_sortlist.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
