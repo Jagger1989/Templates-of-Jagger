@@ -59,9 +59,11 @@ void testTemp()
     //int arr[] = { 1,3,4 };
     //int x = end(arr) - begin(arr);
     //cout << x << endl;
-    vector<int> list = {12,3123,14,1};
-    list.shrink_to_fit();
-    cout << list.capacity() << endl;
+    //vector<int> list = {12,313,14,1};
+    //list.shrink_to_fit();
+    //cout << list.capacity() << endl;
+    list<int> list2;
+    cout << sizeof list2 << endl;
 }
 
 

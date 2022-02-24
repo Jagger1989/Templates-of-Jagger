@@ -5,12 +5,18 @@
 #include "src/Template/Template_Functor.h"
 #include "src/TemplatePrograming/Template_1.h"
 #include "src/STL/containers.hpp"
+#include "src/STL/custom_sortlist.hpp"
 #include "Temp.hpp"
+
+#include <deque>
+
 int main()
 {
-    //testChar();
-    testTemp();
-    system("pause");
+    testCustomQueue();
+
+
+
+    //system("pause");
 }
 
 /*
