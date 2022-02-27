@@ -158,5 +158,11 @@
     <ClInclude Include="src\STL\custom_sortlist.hpp">
       <Filter>STL</Filter>
     </ClInclude>
+    <ClInclude Include="src\STL\stream.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\STL\ifstream&amp;ofstream.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

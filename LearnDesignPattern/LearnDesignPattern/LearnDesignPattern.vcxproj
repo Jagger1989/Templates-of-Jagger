@@ -238,6 +238,8 @@
     <ClInclude Include="src\STL\containers.hpp" />
     <ClInclude Include="src\STL\custom_queue.hpp" />
     <ClInclude Include="src\STL\custom_sortlist.hpp" />
+    <ClInclude Include="src\STL\ifstream&amp;ofstream.hpp" />
+    <ClInclude Include="src\STL\stream.hpp" />
     <ClInclude Include="src\TemplatePrograming\Template_1.h" />
     <ClInclude Include="src\Template\Template_Deque.h" />
     <ClInclude Include="src\Template\Template_Move.hpp" />
