@@ -5,14 +5,14 @@
 #include "src/Template/Template_Functor.h"
 #include "src/TemplatePrograming/Template_1.h"
 #include "src/STL/containers.hpp"
-#include "src/STL/stream.hpp"
+#include "src/STL/string_p.hpp"
 #include "Temp.hpp"
 
 #include <deque>
 
 int main()
 {
-    testStream();
+    testString_p5();
 
 
 

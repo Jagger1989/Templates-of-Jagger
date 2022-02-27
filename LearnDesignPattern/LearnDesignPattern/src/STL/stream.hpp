@@ -16,6 +16,9 @@ void testStream()
     cout << "输入字符串" << endl;
     cin.getline(ch, 20, '\\');
     cout << "该字符串是" << ch << endl;
+
+    cerr << "fata" << endl; // 无缓冲，有一条输出一条
+    clog << "test clog" << endl;
 }
 
 #endif // !STREAM_HPP

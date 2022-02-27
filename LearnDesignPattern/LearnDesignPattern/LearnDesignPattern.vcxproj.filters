@@ -161,7 +161,10 @@
     <ClInclude Include="src\STL\stream.hpp">
       <Filter>STL</Filter>
     </ClInclude>
-    <ClInclude Include="src\STL\ifstream&amp;ofstream.hpp">
+    <ClInclude Include="src\STL\string_p.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\STL\ifstream_ofstream.hpp">
       <Filter>STL</Filter>
     </ClInclude>
   </ItemGroup>
