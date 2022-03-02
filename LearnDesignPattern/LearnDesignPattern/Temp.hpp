@@ -1,5 +1,7 @@
 ﻿#include "src/Utility/common.h"
 
+#include <chrono>
+
 using namespace std;
 
 class Temp {
@@ -53,17 +55,43 @@ T asdfasf(T x)
 #include <xmemory>
 void testTemp()
 {
-    //const MyFunctor mf(10);
-    //tempppp(mf);
-    //asdfasf(Temp(1));
-    //int arr[] = { 1,3,4 };
-    //int x = end(arr) - begin(arr);
-    //cout << x << endl;
-    //vector<int> list = {12,313,14,1};
-    //list.shrink_to_fit();
-    //cout << list.capacity() << endl;
-    list<int> list2;
-    cout << sizeof list2 << endl;
+    string str("");
+    string temp("abc123");
+
+    std::chrono::time_point<chrono::system_clock> chronoTimeStart = chrono::system_clock::now();
+    for (size_t i = 0; i < 999999; i++)
+    {
+        str.append(temp, 2, 4);
+        if (str.size() == str.max_size())
+        {
+            str = "";
+        }
+    }
+    std::chrono::time_point<chrono::system_clock> chronoTimeEnd = chrono::system_clock::now();
+    float timeDelta = static_cast<float>(chrono::duration_cast<chrono::milliseconds>(chronoTimeEnd - chronoTimeStart).count());
+    cout << "index : " << timeDelta << endl;
+
+    chronoTimeStart = chrono::system_clock::now();
+    for (size_t i = 0; i < 999999; i++)
+    {
+        str.append(temp.begin() + 2, temp.begin() + 5);
+        if (str.size() == str.max_size())
+        {
+            str = "";
+        } 
+    }
+    chronoTimeEnd = chrono::system_clock::now();
+    timeDelta = static_cast<float>(chrono::duration_cast<chrono::milliseconds>(chronoTimeEnd - chronoTimeStart).count());
+    cout << "iterator : " << timeDelta << endl;
+}
+
+void testccccc()
+{
+    string str;
+    cout << str.max_size() << endl;
+    string temp(str.max_size() - 1, 'a');
+    str.append(temp);
+    cout << "end" << endl;
 }
 
 

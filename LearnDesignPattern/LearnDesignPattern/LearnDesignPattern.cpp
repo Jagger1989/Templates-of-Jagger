@@ -12,9 +12,7 @@
 
 int main()
 {
-    testString_p5();
-
-
+    testString_p9();
 
     //system("pause");
 }

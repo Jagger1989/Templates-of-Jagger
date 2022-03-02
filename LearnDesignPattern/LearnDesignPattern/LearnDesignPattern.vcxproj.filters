@@ -167,5 +167,8 @@
     <ClInclude Include="src\STL\ifstream_ofstream.hpp">
       <Filter>STL</Filter>
     </ClInclude>
+    <ClInclude Include="src\STL\sstream_p.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
