@@ -227,6 +227,7 @@
     <ClCompile Include="src\Utility\FinishAction.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Boost\boost_string.hpp" />
     <ClInclude Include="src\DesignPattern\Pattern_Bridge.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Builder.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Decoration.h" />
@@ -237,6 +238,7 @@
     <ClInclude Include="src\DesignPattern\Pattern_Singleton_2.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Strategy.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Visitor.h" />
+    <ClInclude Include="src\PerformanceTest\test_vector.hpp" />
     <ClInclude Include="src\STL\containers.hpp" />
     <ClInclude Include="src\STL\custom_queue.hpp" />
     <ClInclude Include="src\STL\custom_sortlist.hpp" />

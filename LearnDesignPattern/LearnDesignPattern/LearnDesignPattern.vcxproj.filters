@@ -34,6 +34,9 @@
     <Filter Include="STL">
       <UniqueIdentifier>{39599514-36c6-4b89-99ce-890240f142cb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="PerformanceTest">
+      <UniqueIdentifier>{b203e690-387d-4408-b24d-bb89680bd4c7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LearnDesignPattern.cpp">
@@ -166,6 +169,12 @@
     </ClInclude>
     <ClInclude Include="src\STL\ifstream_ofstream.hpp">
       <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PerformanceTest\test_vector.hpp">
+      <Filter>PerformanceTest</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Boost\boost_string.hpp">
+      <Filter>Boost</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

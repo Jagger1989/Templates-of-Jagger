@@ -6,15 +6,16 @@
 #include "src/TemplatePrograming/Template_1.h"
 #include "src/STL/containers.hpp"
 #include "src/STL/string_p.hpp"
+#include "src/PerformanceTest/test_vector.hpp"
+#include "src/Boost/boost_string.hpp"
 #include "Temp.hpp"
 
 #include <deque>
 
 int main()
 {
-    testString_p5();
 
-
+    testBoostString1();
 
     //system("pause");
 }

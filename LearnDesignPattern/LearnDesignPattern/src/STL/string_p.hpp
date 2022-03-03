@@ -78,7 +78,7 @@ void testString_p1()
     cout << str8 << endl;
 }
 
-// push_back(), append(), insert()
+// operator+= push_back(), append(), insert()
 void testString_p2()
 {
     string str1("abcde12345");
@@ -139,7 +139,7 @@ void testString_p3()
     cout << str2 << endl;
 }
 
-// erase()
+// erase() pop_back()
 void testString_p4()
 {
     string str1 = "abcde12345";
@@ -164,6 +164,12 @@ void testString_p4()
     cout << str1 << endl;
     cout << *it2 << endl;
     cout << "=========================" << endl;
+
+    str1 = "abcde12345";
+    str1.pop_back(); // 删除最后一个元素，返回void
+    cout << str1 << endl;
+    cout << *it2 << endl;
+    cout << "=========================" << endl;
 }
 
 // assign()
@@ -184,5 +190,21 @@ void testString_p5()
     cout << str1 << endl;
 }
 
+void testString_p6()
+{
+    string str1 = "abcde12345";
+    string temp = "xxx";
+    str1.replace(2, 4, temp);
+    cout << str1 << endl;
+    cout << "=========================" << endl;
+    str1 = "abcde12345";
+    str1.replace(str1.begin() + 2, str1.end(), temp);
+    cout << str1 << endl;
+}
+
+void testString_p7()
+{
+
+}
 
 #endif // !STRING_P_HPP
