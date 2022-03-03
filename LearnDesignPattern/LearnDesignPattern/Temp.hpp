@@ -85,13 +85,4 @@ void testTemp()
     cout << "iterator : " << timeDelta << endl;
 }
 
-void testccccc()
-{
-    string str;
-    cout << str.max_size() << endl;
-    string temp(str.max_size() - 1, 'a');
-    str.append(temp);
-    cout << "end" << endl;
-}
-
 

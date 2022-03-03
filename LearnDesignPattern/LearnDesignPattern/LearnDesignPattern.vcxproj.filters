@@ -170,5 +170,14 @@
     <ClInclude Include="src\STL\sstream_p.hpp">
       <Filter>STL</Filter>
     </ClInclude>
+    <ClInclude Include="src\Boost\boost_string.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PerformanceTest\test_vector.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\STL\vector_p.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

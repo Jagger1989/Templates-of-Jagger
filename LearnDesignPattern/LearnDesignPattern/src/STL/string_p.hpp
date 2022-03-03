@@ -355,6 +355,10 @@ void testString_p165()
     string str("abcde12345");
     const char* charPtr1 = str.c_str();
     const char* charPtr2 = str.data();
+
+    auto it = str.cbegin(); // 返回的是std::string::const_iterator
+    cout << *it << endl;
+    //*it = 'b'; // 因为是const_iterator，无法修改值
 }
 
 

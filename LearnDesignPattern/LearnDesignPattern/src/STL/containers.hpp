@@ -22,6 +22,23 @@ STL六大部件(参见testSTLContainer())：
 */
 
 /*
+标准容器
+    顺序容器
+            vector
+            deque
+            list
+    关联容器
+            set, multiset
+            map, multimap
+            unordered_set, unordered_multiset
+            unordered_map, unordered_multimap
+容器适配器
+    stack
+    queue
+    priority_queue
+*/
+
+/*
 复杂度
     O(1)        常数时间
     O(n)        线性时间
@@ -30,6 +47,19 @@ STL六大部件(参见testSTLContainer())：
     O(n^3)      立方时间
     O(2^n)      指数时间
     O(nlog2n)   介于线性及二次方程长的中间之行为模式
+*/
+
+/*
+size        当前元素个数
+capacity    当前已分配的内存最大可容纳元素个数
+max_size    分配最大内存时可容纳元素个数
+
+size是当前vector容器真实占用的大小，也就是容器当前拥有多少个元素。
+capacity是指在发生realloc前能允许的最大元素数，即预分配的内存空间。
+当然，这两个属性分别对应两个方法：resize()和reserve()。
+使用resize()，容器内的对象内存空间是真正存在的。
+使用reserve()仅仅只是修改了capacity的值，容器内的对象并没有真实的内存空间(空间是"野"的)。
+此时切记使用[]操作符访问容器内的对象，很可能出现数组越界的问题。
 */
 
 void testSTLContainer()

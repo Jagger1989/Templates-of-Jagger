@@ -5,21 +5,16 @@
 #include "src/Template/Template_Functor.h"
 #include "src/TemplatePrograming/Template_1.h"
 #include "src/STL/containers.hpp"
-#include "src/STL/string_p.hpp"
 #include "src/PerformanceTest/test_vector.hpp"
 #include "src/Boost/boost_string.hpp"
 #include "Temp.hpp"
 
-#include <deque>
+#include "src/STL/vector_p.hpp"
 
 int main()
 {
-<<<<<<< HEAD
 
-    testBoostString1();
-=======
-    testString_p9();
->>>>>>> 133b20d511e89e4ba69e711068609bd924d0983b
+    testVectorPerformance();
 
     //system("pause");
 }
