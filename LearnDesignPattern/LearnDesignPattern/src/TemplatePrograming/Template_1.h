@@ -9,6 +9,12 @@
 #include <math.h>
 #include <boost/algorithm/algorithm.hpp>
 
+/*
+  typedef typename Type xxx;
+  此用法用于当Type为模板参数时，因为编译前编译前无法知道Type具体类型
+  此时加上typename相当于添加一个标签来指引编译器编译，不加编译会报错
+*/
+
 // 模板类在实例化时必须指明类型
 // 模板函数可以推导
 

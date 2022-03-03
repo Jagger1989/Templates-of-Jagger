@@ -14,8 +14,12 @@
 
 int main()
 {
+<<<<<<< HEAD
 
     testBoostString1();
+=======
+    testString_p9();
+>>>>>>> 133b20d511e89e4ba69e711068609bd924d0983b
 
     //system("pause");
 }
