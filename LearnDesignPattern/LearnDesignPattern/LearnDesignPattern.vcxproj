@@ -284,7 +284,9 @@
     <ClInclude Include="src\DesignPattern\Pattern_Visitor.h" />
     <ClInclude Include="src\Other\mercator.h" />
     <ClInclude Include="src\Other\mercator_3.hpp" />
+    <ClInclude Include="src\Other\mercator_tested.hpp" />
     <ClInclude Include="src\Other\mercator_with_class.h" />
+    <ClInclude Include="src\Other\my_math.hpp" />
     <ClInclude Include="src\PerformanceTest\test_vector.hpp" />
     <ClInclude Include="src\STL\containers.hpp" />
     <ClInclude Include="src\STL\custom_queue.hpp" />

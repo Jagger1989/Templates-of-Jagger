@@ -194,5 +194,11 @@
     <ClInclude Include="src\Other\mercator_3.hpp">
       <Filter>Ohter</Filter>
     </ClInclude>
+    <ClInclude Include="src\Other\mercator_tested.hpp">
+      <Filter>Ohter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Other\my_math.hpp">
+      <Filter>Ohter</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
