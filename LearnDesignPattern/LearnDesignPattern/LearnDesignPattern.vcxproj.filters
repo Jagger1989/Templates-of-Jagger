@@ -42,6 +42,12 @@
     <ClCompile Include="src\Utility\FinishAction.cpp">
       <Filter>common</Filter>
     </ClCompile>
+    <ClCompile Include="src\Other\mercator.cpp">
+      <Filter>Ohter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Other\mercator_with_class.cpp">
+      <Filter>Ohter</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\DesignPattern\Pattern_Bridge.h">
@@ -178,6 +184,15 @@
     </ClInclude>
     <ClInclude Include="src\STL\vector_p.hpp">
       <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Other\mercator.h">
+      <Filter>Ohter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Other\mercator_with_class.h">
+      <Filter>Ohter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Other\mercator_3.hpp">
+      <Filter>Ohter</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

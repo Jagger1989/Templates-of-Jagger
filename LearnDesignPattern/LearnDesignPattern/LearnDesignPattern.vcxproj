@@ -266,6 +266,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="LearnDesignPattern.cpp" />
+    <ClCompile Include="src\Other\mercator.cpp" />
+    <ClCompile Include="src\Other\mercator_with_class.cpp" />
     <ClCompile Include="src\Utility\FinishAction.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -280,6 +282,9 @@
     <ClInclude Include="src\DesignPattern\Pattern_Singleton_2.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Strategy.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Visitor.h" />
+    <ClInclude Include="src\Other\mercator.h" />
+    <ClInclude Include="src\Other\mercator_3.hpp" />
+    <ClInclude Include="src\Other\mercator_with_class.h" />
     <ClInclude Include="src\PerformanceTest\test_vector.hpp" />
     <ClInclude Include="src\STL\containers.hpp" />
     <ClInclude Include="src\STL\custom_queue.hpp" />
