@@ -9,12 +9,12 @@
 #include "src/Boost/boost_string.hpp"
 #include "Temp.hpp"
 
-#include "src/STL/vector_p.hpp"
+#include "src/STL/string_p.hpp"
 
 int main()
 {
 
-    testVectorPerformance();
+    testTemp2();
 
     //system("pause");
 }

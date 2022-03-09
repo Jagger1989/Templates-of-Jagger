@@ -99,7 +99,7 @@ void testString_p2()
     cout << "=========================" << endl;
 
     str5 = "abcdef12345";
-    str5.insert(2, temp2, 2, 3); // 在索引2前处插入temp2的索引2到3
+    str5.insert(2, temp2, 2, 3); // 在索引2前处插入temp2的索引起始长度3的部分
     cout << str5 << endl;
     cout << "=========================" << endl;
 
@@ -250,7 +250,7 @@ void testString_p8()
     //string& replace(size_t pos, size_t len, const string& str);
     string str1("abcde12345");
     const string temp("uvwxyz");
-    str1.replace(2, 3, temp); // 注意此处param2是长度（索引参数基本都是起始索引+长度，并且前闭后闭）
+    str1.replace(2, 3, temp); // 注意此处param2是长度（索引参数基本都是起始索引+长度）
     cout << str1 << endl;
     cout << "1=========================" << endl;
 
@@ -283,11 +283,11 @@ void testString_p8()
 void testString_p9()
 {
     string str("abcde12345abcde12345");
-    size_t index = str.find("c"); // 没找到返回npos
+    size_t index = str.find("c"); // 没找到返回npos，实际结果也是返回第一个c的索引
     cout << index << endl;
     cout << "1=========================" << endl;
 
-    index = str.rfind("c");
+    index = str.rfind("c"); // 逆向查找第一个c
     cout << index << endl;
     cout << "2=========================" << endl;
 
@@ -353,8 +353,12 @@ void testString_p12()
 void testString_p165()
 {
     string str("abcde12345");
-    const char* charPtr1 = str.c_str();
-    const char* charPtr2 = str.data();
+    const char* charPtr1 = str.c_str(); // 会自动附加一个终止的空字符
+    const char* charPtr2 = str.data();  // 什么都不加
+
+    printf("%s", charPtr1);
+    cout << endl;
+    printf("%s", charPtr2);
 
     auto it = str.cbegin(); // 返回的是std::string::const_iterator
     cout << *it << endl;

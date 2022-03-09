@@ -85,4 +85,22 @@ void testTemp()
     cout << "iterator : " << timeDelta << endl;
 }
 
+void testTemp2()
+{
+    vector<int> list(10, 1);
+    auto it = list.begin();
+    auto it2 = list.begin();
+    for (; it != list.end(); ++it)
+        cout << *it << endl;
+
+    list.insert(it, 19);
+    cout << "=======================" << endl;
+    for (; it != list.begin(); --it)
+        cout << *it << endl;
+    cout << "=======================" << endl;
+    it2 = list.begin();
+    for (; it2 != list.end(); ++it2)
+        cout << *it2 << endl;
+}
+
 
