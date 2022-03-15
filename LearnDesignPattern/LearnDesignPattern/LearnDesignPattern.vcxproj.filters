@@ -200,5 +200,8 @@
     <ClInclude Include="src\Other\my_math.hpp">
       <Filter>Ohter</Filter>
     </ClInclude>
+    <ClInclude Include="src\Boost\boost_string.hpp">
+      <Filter>Boost</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

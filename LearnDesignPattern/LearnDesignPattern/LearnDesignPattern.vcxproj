@@ -274,6 +274,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Boost\boost_string.hpp" />
+    <ClInclude Include="src\Boost\boost_string.hpp" />
     <ClInclude Include="src\DesignPattern\Pattern_Bridge.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Builder.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Decoration.h" />

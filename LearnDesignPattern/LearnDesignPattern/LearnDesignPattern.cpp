@@ -14,7 +14,7 @@
 int main()
 {
 
-    testTemp();
+    testTemp2();
 
     //system("pause");
 }
