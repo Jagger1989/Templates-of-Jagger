@@ -55,11 +55,12 @@ public:
 template<typename T>
 class Vector2 : public Vector<T, 2>
 {
-
 };
 
-
-
+template<typename T>
+class Vector3 : public Vector<T, 3>
+{
+};
 
 
 }

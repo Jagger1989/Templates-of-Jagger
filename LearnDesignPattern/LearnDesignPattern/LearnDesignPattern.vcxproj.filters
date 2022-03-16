@@ -28,11 +28,17 @@
     <Filter Include="TemplatePrograming">
       <UniqueIdentifier>{b2545e8d-6a24-4e4a-bb33-e05c8f99feae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="OldTemplate">
-      <UniqueIdentifier>{4a572edd-58fb-4f9c-8e4a-a5f253a8703b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="STL">
       <UniqueIdentifier>{39599514-36c6-4b89-99ce-890240f142cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ohter\mercator">
+      <UniqueIdentifier>{5d50f1b1-ce5a-40f5-9ae6-878d1cdab1d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="custom_class">
+      <UniqueIdentifier>{53b9c103-7703-4e68-86e6-2986b13c53ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="coding_template">
+      <UniqueIdentifier>{4a572edd-58fb-4f9c-8e4a-a5f253a8703b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -43,10 +49,10 @@
       <Filter>common</Filter>
     </ClCompile>
     <ClCompile Include="src\Other\mercator.cpp">
-      <Filter>Ohter</Filter>
+      <Filter>Ohter\mercator</Filter>
     </ClCompile>
     <ClCompile Include="src\Other\mercator_with_class.cpp">
-      <Filter>Ohter</Filter>
+      <Filter>Ohter\mercator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -84,31 +90,31 @@
       <Filter>common</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_SharedPointor.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Thread.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Mutex.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\DesignPattern\Pattern_Singleton_2.h">
       <Filter>DesignPattern</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Handle.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_TypeCast.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Thread-0.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\FindFile_FindDirectory.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\utility.hpp">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Utility\json.hpp">
       <Filter>common</Filter>
@@ -117,40 +123,40 @@
       <Filter>common</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_std_chrono.hpp">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Thread2.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Final.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Functor.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Vector.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_LLA_Calculate.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_TODO.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_JsonUse.hpp">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_String.hpp">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Move.hpp">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\TemplatePrograming\Template_1.h">
       <Filter>TemplatePrograming</Filter>
     </ClInclude>
     <ClInclude Include="src\Template\Template_Deque.h">
-      <Filter>OldTemplate</Filter>
+      <Filter>coding_template</Filter>
     </ClInclude>
     <ClInclude Include="src\STL\containers.hpp">
       <Filter>STL</Filter>
@@ -182,26 +188,29 @@
     <ClInclude Include="src\STL\vector_p.hpp">
       <Filter>STL</Filter>
     </ClInclude>
-    <ClInclude Include="src\Other\mercator.h">
-      <Filter>Ohter</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Other\mercator_with_class.h">
-      <Filter>Ohter</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Other\mercator_3.hpp">
-      <Filter>Ohter</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Other\mercator_tested.hpp">
-      <Filter>Ohter</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Other\my_math.hpp">
-      <Filter>Ohter</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Boost\boost_string.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="src\Boost\boost_string.hpp">
       <Filter>Boost</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Other\mercator.h">
+      <Filter>Ohter\mercator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Other\mercator_3.hpp">
+      <Filter>Ohter\mercator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Other\mercator_tested.hpp">
+      <Filter>Ohter\mercator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Other\mercator_with_class.h">
+      <Filter>Ohter\mercator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Other\my_math.hpp">
+      <Filter>Ohter\mercator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Other\my_vector.hpp">
+      <Filter>custom_class</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Template\placement_new.hpp">
+      <Filter>coding_template</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

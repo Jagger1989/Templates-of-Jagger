@@ -10,11 +10,17 @@
 #include "Temp.hpp"
 
 #include "src/STL/string_p.hpp"
+#include "src/Template/placement_new.hpp"
+
+class Testttttt
+{
+
+};
 
 int main()
 {
 
-    testBoostString1();
+    placement_new::testPlacementNew2();
 
     //system("pause");
 }

@@ -273,7 +273,6 @@
     <ClCompile Include="src\Utility\FinishAction.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Boost\boost_string.hpp" />
     <ClInclude Include="src\DesignPattern\Pattern_Bridge.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Builder.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Decoration.h" />
@@ -289,6 +288,7 @@
     <ClInclude Include="src\Other\mercator_tested.hpp" />
     <ClInclude Include="src\Other\mercator_with_class.h" />
     <ClInclude Include="src\Other\my_math.hpp" />
+    <ClInclude Include="src\Other\my_vector.hpp" />
     <ClInclude Include="src\PerformanceTest\test_vector.hpp" />
     <ClInclude Include="src\STL\containers.hpp" />
     <ClInclude Include="src\STL\custom_queue.hpp" />
@@ -299,6 +299,7 @@
     <ClInclude Include="src\STL\ifstream_ofstream.hpp" />
     <ClInclude Include="src\STL\vector_p.hpp" />
     <ClInclude Include="src\TemplatePrograming\Template_1.h" />
+    <ClInclude Include="src\Template\placement_new.hpp" />
     <ClInclude Include="src\Template\Template_Deque.h" />
     <ClInclude Include="src\Template\Template_Move.hpp" />
     <ClInclude Include="src\Template\Template_SharedPointor.h" />
