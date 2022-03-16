@@ -176,9 +176,6 @@
     <ClInclude Include="src\STL\sstream_p.hpp">
       <Filter>STL</Filter>
     </ClInclude>
-    <ClInclude Include="src\Boost\boost_string.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="src\PerformanceTest\test_vector.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -199,6 +196,9 @@
     </ClInclude>
     <ClInclude Include="src\Other\my_math.hpp">
       <Filter>Ohter</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Boost\boost_string.hpp">
+      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="src\Boost\boost_string.hpp">
       <Filter>Boost</Filter>

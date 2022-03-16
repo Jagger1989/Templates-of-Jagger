@@ -14,7 +14,7 @@
 int main()
 {
 
-    testTemp2();
+    testBoostString1();
 
     //system("pause");
 }
