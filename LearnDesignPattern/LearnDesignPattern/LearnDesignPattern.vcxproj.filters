@@ -188,9 +188,6 @@
     <ClInclude Include="src\STL\vector_p.hpp">
       <Filter>STL</Filter>
     </ClInclude>
-    <ClInclude Include="src\Boost\boost_string.hpp">
-      <Filter>Boost</Filter>
-    </ClInclude>
     <ClInclude Include="src\Other\mercator.h">
       <Filter>Ohter\mercator</Filter>
     </ClInclude>
@@ -211,6 +208,9 @@
     </ClInclude>
     <ClInclude Include="src\Template\placement_new.hpp">
       <Filter>coding_template</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Other\my_deque.hpp">
+      <Filter>custom_class</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

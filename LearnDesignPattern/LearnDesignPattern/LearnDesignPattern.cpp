@@ -17,11 +17,23 @@ class Testttttt
 
 };
 
+int get_param()
+{
+    int i = 100;
+    return i;
+}
+
+void testMain1()
+{
+    //int& ri = get_param(); //编译报错，不能使用右值初始化引用，因为改变ri时，右值不能被赋值改变
+    const int& ri = get_param(); // 加了const不能修改值，就不存在上面的问题了
+    cout << ri << endl;
+}
+
 int main()
 {
 
-    placement_new::testPlacementNew2();
-
+    //placement_new::testPlacementNew2();
     //system("pause");
 }
 
