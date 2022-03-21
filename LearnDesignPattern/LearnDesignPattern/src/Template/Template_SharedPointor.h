@@ -5,7 +5,7 @@
 #include "../Utility/common.h"
 #include <functional>
 #include <memory>
-
+using namespace std;
 class Investment
 {
 
@@ -127,32 +127,38 @@ void testSharedPtr()                                                            
 // *****************************************************************************************//*
 
 // weak_ptr
-// 用于解决循环引用造成内存泄露的问题
+// 为了辅助shared_ptr而引入的一种智能指针，析构和构造不会改变引用计数
+// 用于解决shared_ptr循环引用造成内存泄露的问题
 
 class SharedPtrTest2;
 class SharedPtrTest1 {
 public:
     void printRefCount()
     {
-        std::cout << m_ptr1.use_count() << std::endl;
+        std::cout << m_2ptr.use_count() << std::endl;
     }
 
     ~SharedPtrTest1()
     {
-
+        cout << m_2ptr.use_count() << endl;
     }
 private:
-    std::shared_ptr<SharedPtrTest2> m_ptr1;
+    std::shared_ptr<SharedPtrTest2> m_2ptr;
 };
 
 class SharedPtrTest2 {
 public:
     void printRefCount()
     {
-        std::cout << m_ptr1.use_count() << std::endl;
+        std::cout << m_1ptr.use_count() << std::endl;
+    }
+
+    ~SharedPtrTest2()
+    {
+        cout << m_1ptr.use_count() << endl;
     }
 private:
-    std::shared_ptr<SharedPtrTest1> m_ptr1;
+    std::shared_ptr<SharedPtrTest1> m_1ptr;
 };
 
 void testSharedPtr5()

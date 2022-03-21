@@ -15,6 +15,7 @@ void testTODO()
     //int y = x + 1; // 编译报错
 
     // <std::underlying_type<[enum type]>::type>([enum value]) 用于获取enum字段的原始类型值
+    // 用于enum class的，是用于获取整型值的
     int y = static_cast<std::underlying_type<MyEnum>::type>(x) + 1;
     int z = static_cast<std::underlying_type<MyEnum>::type>(MyEnum::second) + 1;
     std::cout << y << std::endl;

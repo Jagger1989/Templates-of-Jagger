@@ -8,10 +8,13 @@ namespace placement_new {
     public:
         void print()
         {
-            cout << "hello world" << endl;
+            cout << "print" << endl;
         }
 
-        ~A() {}
+        ~A()
+        {
+            cout << "destructor" << endl;
+        }
     };
 
     /*
@@ -26,7 +29,10 @@ namespace placement_new {
         A* ptr1 = new A; // 分配size个字节的存储空间，并将对象类型进行内存对齐。如果成功，返回一个非空的指针指向首地址。失败抛出bad_alloc异常
         A* ptr2 = new (std::nothrow)A; // 在分配失败时不抛出异常，它返回一个NULL指针
         A* ptr3 = nullptr;
-        new (ptr3)A(); // 在指针ptr3所指处调用合适的构造函数，返回实参ptr3
+        A* ptr4 = new (ptr3)A(); // 在指针ptr3所指处调用合适的构造函数，返回实参ptr3，用一个新的指针来接返回值的目的推测是为了更好的语义
+        char* p = new char[10 * sizeof(A)];
+        A* ptr5 = new (p)A(); // 可以与原类型不一致的类型
+
         ptr3->print();
     }
 
@@ -41,8 +47,24 @@ namespace placement_new {
         // 理解这里是为了更好的语义，因为p2并没有分配内存，
         // delete p2语义不合理，p又不是A类型所以调用析构也不合理
         // 最终使用p释放内存，p2调用析构
-        p2->~A();
+        p2->~A(); // 实测不主动调用p2不会走析构函数，这里要注意！！！
+        // 需要释放内存，因为p是new出来的，可以这样理解：p的new和delete依然要配对使用，placement并没有new所以不需要delete
         delete[] p;
+    }
+
+    void testPlacementNew3()
+    {
+        char p[10] = { "asdf" };
+        A* p2 = new (p)A;
+        if ((int)p2 == (int)p)
+        {
+            cout << "p == p2" << endl;
+        }
+        // 理解这里是为了更好的语义，因为p2并没有分配内存，
+        // delete p2语义不合理，p又不是A类型所以调用析构也不合理
+        // 最终使用p释放内存，p2调用析构
+        p2->~A(); // 如果不调会怎么样？？
+        //delete[] p; // 不需要释放内存，因为p不是new出来的
     }
 
     void test()

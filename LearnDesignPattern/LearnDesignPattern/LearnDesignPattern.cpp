@@ -20,7 +20,9 @@ class Testttttt
 int main()
 {
 
-    placement_new::testPlacementNew2();
+    //placement_new::testPlacementNew2();
+    size_t length = sizeof(string);
+    cout << length << endl;
 
     //system("pause");
 }
