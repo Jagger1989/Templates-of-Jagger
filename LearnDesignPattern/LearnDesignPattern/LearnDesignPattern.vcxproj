@@ -287,6 +287,7 @@
     <ClInclude Include="src\Other\mercator_3.hpp" />
     <ClInclude Include="src\Other\mercator_tested.hpp" />
     <ClInclude Include="src\Other\mercator_with_class.h" />
+    <ClInclude Include="src\Other\my_deque.hpp" />
     <ClInclude Include="src\Other\my_math.hpp" />
     <ClInclude Include="src\Other\my_vector.hpp" />
     <ClInclude Include="src\PerformanceTest\test_vector.hpp" />
