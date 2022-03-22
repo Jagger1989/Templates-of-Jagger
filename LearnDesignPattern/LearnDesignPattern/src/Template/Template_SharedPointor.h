@@ -20,7 +20,6 @@ public:
     }
 };
 
-
 // std::shared_ptr
 void test1()
 {
@@ -56,7 +55,7 @@ void test2()
 {
     // auto_ptr可以自动释放资源，但是并非引用计数，copy时要小心
     std::auto_ptr<Investment> pInv(InvestmentFactory::createInvestment());
-    std::auto_ptr<Investment> pInv2(pInv); // 此时被复制的pInv变成nullptr
+    std::auto_ptr<Investment> pInv2(pInv); // 此时被复制的pInv变成nullptr, 内部会调用传入的ptr的release()函数
     pInv = pInv2; //此时被复制的pInv2变为nullptr
 }
 

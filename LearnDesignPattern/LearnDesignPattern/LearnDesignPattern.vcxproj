@@ -300,6 +300,7 @@
     <ClInclude Include="src\STL\ifstream_ofstream.hpp" />
     <ClInclude Include="src\STL\vector_p.hpp" />
     <ClInclude Include="src\TemplatePrograming\Template_1.h" />
+    <ClInclude Include="src\Template\override_operator.hpp" />
     <ClInclude Include="src\Template\placement_new.hpp" />
     <ClInclude Include="src\Template\Template_Deque.h" />
     <ClInclude Include="src\Template\Template_Move.hpp" />
@@ -311,7 +312,7 @@
     <ClInclude Include="src\Template\Template_Thread2.h" />
     <ClInclude Include="src\Template\Template_Mutex.h" />
     <ClInclude Include="src\Template\Template_Handle.h" />
-    <ClInclude Include="src\Template\Template_TypeCast.h" />
+    <ClInclude Include="src\Template\type_cast.hpp" />
     <ClInclude Include="src\Template\FindFile_FindDirectory.h" />
     <ClInclude Include="src\Template\Template_JsonUse.hpp" />
     <ClInclude Include="src\Template\Template_std_chrono.hpp" />

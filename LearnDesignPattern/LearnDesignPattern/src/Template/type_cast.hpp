@@ -2,6 +2,7 @@
 #define TYPE_CAST_H
 
 #include "../Utility/common.h"
+using namespace std;
 
 class AA
 {
@@ -75,10 +76,20 @@ void testTypeCast()
 
     }
 
-    // 4. dynamic_cast 向下转换时使用，有类型检查
+    // 4. dynamic_cast 将基类类型的指针或引用安全地转换为其派生类类型的指针或引用
     {
-        
+
     }
+}
+
+#include <typeinfo>
+
+// typeid()
+void testTypeCast2()
+{
+    AA a;
+    std::string name = typeid(a).name();
+    cout << name << endl;
 }
 
 #endif // !TYPE_CAST_H
