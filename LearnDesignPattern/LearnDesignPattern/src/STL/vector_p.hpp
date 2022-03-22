@@ -6,6 +6,8 @@ using namespace std;
 
 int m_printCount = 1;
 
+// vector ÊÇ0.5±¶À©ÈÝ
+
 template<typename T>
 void printfVector(const vector<T>& v)
 {

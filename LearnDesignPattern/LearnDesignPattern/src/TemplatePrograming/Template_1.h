@@ -76,7 +76,7 @@ int MyClass<T1, int>::tttt()
 //template<typename T>
 template<class T>
 // class和typename是一样的，不可以用struct
-inline T max(const T& a, const T& b)
+inline T max2(const T& a, const T& b)
 {
     return a > b ? a : b;
 }

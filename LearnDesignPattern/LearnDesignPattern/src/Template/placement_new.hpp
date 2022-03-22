@@ -40,7 +40,7 @@ namespace placement_new {
     {
         char* p = new char[10 * sizeof(A)];
         A* p2 = new (p)A;
-        if ((int)p2 == (int)p)
+        if ((void*)p2 == (void*)p)
         {
             cout << "p == p2" << endl;
         }
@@ -56,7 +56,7 @@ namespace placement_new {
     {
         char p[10] = { "asdf" };
         A* p2 = new (p)A;
-        if ((int)p2 == (int)p)
+        if ((void*)p2 == (void*)p)
         {
             cout << "p == p2" << endl;
         }

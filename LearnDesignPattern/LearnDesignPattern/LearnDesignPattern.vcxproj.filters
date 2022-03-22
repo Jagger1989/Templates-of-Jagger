@@ -215,5 +215,8 @@
     <ClInclude Include="src\Template\type_cast.hpp">
       <Filter>coding_template</Filter>
     </ClInclude>
+    <ClInclude Include="src\STL\list_p.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

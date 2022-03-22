@@ -29,7 +29,7 @@ void testChar()
     //strcpy(p, "asdfasdf");
     //strcpy(p, pp);
     printf("%s\n", p);
-    delete p;
+    free(p);
 
     // memset
     // 将p1(char*)的前p3(int)个字符设置为p2(int)
@@ -38,14 +38,14 @@ void testChar()
     memset(ppp, 'a', 2);
     printf("%s\n", ppp);
     puts(ppp);
-    delete ppp;
+    free(ppp);
 
     // strcpy
     char* p11 = (char*)malloc(sizeof(char) * 100);
     strcpy(p11, "12345");
     int length = (int)strlen(p11);
     printf("length = %d\n", length);
-    delete p11;
+    free(p11);
 
     //memcpy();
     //memmove();

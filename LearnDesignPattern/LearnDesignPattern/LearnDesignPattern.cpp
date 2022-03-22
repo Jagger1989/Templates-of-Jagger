@@ -1,73 +1,27 @@
 ﻿#include "src/Utility/common.h"
 #include <iostream>
 
-#include "src/Template/Template_String.hpp"
-#include "src/Template/Template_Functor.h"
-#include "src/TemplatePrograming/Template_1.h"
-#include "src/STL/containers.hpp"
 #include "src/PerformanceTest/test_vector.hpp"
 #include "src/Boost/boost_string.hpp"
 #include "Temp.hpp"
 
-#include "src/STL/string_p.hpp"
+// Template/
 #include "src/Template/placement_new.hpp"
 #include "src/Template/override_operator.hpp"
 #include "src/Template/type_cast.hpp"
+#include "src/Template/Template_String.hpp"
+#include "src/Template/Template_Functor.h"
+#include "src/TemplatePrograming/Template_1.h"
 
-class Testttttt
-{
-public:
-    int x = 1;
-
-    ~Testttttt()
-    {
-        cout << "Testttttt destructor" << endl;
-    }
-};
-
-int get_param()
-{
-    int i = 100;
-    return i;
-}
-
-Testttttt& testRef2()
-{
-    Testttttt temp;
-    temp.x = 2;
-    return temp;
-}
-
-Testttttt& testRef()
-{
-    Testttttt obj = testRef2();
-    return obj;
-}
-
-void testMain1()
-{
-    //int x = 0;
-    //x = x++;
-    //cout << x << endl;
-
-    Testttttt& ttttt = testRef();
-    ::Sleep(5000);
-    testRef2();
-    ::Sleep(5000);
-    testRef();
-    ::Sleep(5000);
-    cout << ttttt.x << endl;
-
-
-    //int& ri = get_param(); //编译报错，不能使用右值初始化引用，因为改变ri时，右值不能被赋值改变
-    //const int& ri = get_param(); // 加了const不能修改值，就不存在上面的问题了
-    //cout << ri << endl;
-}
+// STL/
+#include "src/STL/string_p.hpp"
+#include "src/STL/list_p.hpp"
+#include "src/STL/containers.hpp"
 
 int main()
 {
-    testMain1();
-    //placement_new::testPlacementNew2();
+    my_list::list<int> list;
+    cout << sizeof(std::list<int>) << endl;
     system("pause");
 }
 

@@ -294,6 +294,7 @@
     <ClInclude Include="src\STL\containers.hpp" />
     <ClInclude Include="src\STL\custom_queue.hpp" />
     <ClInclude Include="src\STL\custom_sortlist.hpp" />
+    <ClInclude Include="src\STL\list_p.hpp" />
     <ClInclude Include="src\STL\sstream_p.hpp" />
     <ClInclude Include="src\STL\string_p.hpp" />
     <ClInclude Include="src\STL\stream.hpp" />
