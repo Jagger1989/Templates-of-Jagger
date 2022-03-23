@@ -30,7 +30,7 @@ void func(T iter)
 
 int main()
 {
-    testSTLAlgorithm();
+    testOverrideOperator();
     system("pause");
 }
 

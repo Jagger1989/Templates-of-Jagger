@@ -8,7 +8,7 @@ using namespace std;
 template<typename T>
 class CustomVector {
 public:
-    CustomVector(int _val): m_value(_val){}
+    CustomVector(T _val): m_value(_val){}
 
 
     // 重写++obj
@@ -27,6 +27,14 @@ public:
         return temp;
     }
 
+    // 重写类型转换操作符
+    // 用本类型对象给其他类型对象赋值时调用
+    // https://news.68idc.cn/netjishu/cjj/20150714443740.html
+    operator int() const
+    {
+        return int(m_x);
+    }
+
     void print()
     {
         cout << "value = " << m_value << endl;
@@ -34,17 +42,20 @@ public:
 
 private:
     T m_value;
+    int m_x = 11;
 };
 
 void testOverrideOperator()
 {
-    CustomVector<int> obj(1);
-    obj.print();
-    (obj++).print();
-    (++obj).print();
+    int x = CustomVector<int>(1);
+    printf("%d", x);
+    //CustomVector<int> obj(1);
+    //obj.print();
+    //(obj++).print();
+    //(++obj).print();
 
-    obj.operator++();  // 前++
-    obj.operator++(0); // 后++
+    //obj.operator++();  // 前++
+    //obj.operator++(0); // 后++
 }
 
 #endif
