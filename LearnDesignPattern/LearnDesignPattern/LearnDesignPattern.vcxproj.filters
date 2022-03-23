@@ -218,5 +218,8 @@
     <ClInclude Include="src\STL\list_p.hpp">
       <Filter>STL</Filter>
     </ClInclude>
+    <ClInclude Include="src\STL\algorithm.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

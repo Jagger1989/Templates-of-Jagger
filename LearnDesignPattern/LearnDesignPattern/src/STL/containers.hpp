@@ -109,6 +109,27 @@ void testSTLContainer()
         Unordered Map/Multmap
 */
 
+
+/*
+vector              随机迭代器
+array               随机迭代器
+deque               随机迭代器
+list                双向迭代器
+forward_list        单向迭代器
+set                 双向迭代器
+multiset            双向迭代器
+map                 双向迭代器
+multimap            双向迭代器
+unordered_set       单向迭代器
+unordered_map       单向迭代器
+unordered_multiset  单向迭代器
+unordered_multimap  单向迭代器
+
+// ???
+input               输入迭代器
+output              输出迭代器
+*/
+
 #include <list>
 
 void testList()

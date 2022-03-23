@@ -53,7 +53,9 @@ namespace my_list {
         typedef T value_type;
         typedef T* pointer;
         typedef T& reference;
-        typedef ptrdiff_t difference_type;
+        typedef ptrdiff_t difference_type; // ???
+                                           // 用来表示两个迭代器之间的距离，因此它也可以用来表示一个容器的最大容量
+                                           // 因为对于连续空间的容器而言，头尾之间的距离就是其最大容量。
 
         typedef _list_node_base<T>* link_type;
 

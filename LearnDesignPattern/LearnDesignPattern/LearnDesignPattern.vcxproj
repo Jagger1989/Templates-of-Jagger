@@ -291,6 +291,7 @@
     <ClInclude Include="src\Other\my_math.hpp" />
     <ClInclude Include="src\Other\my_vector.hpp" />
     <ClInclude Include="src\PerformanceTest\test_vector.hpp" />
+    <ClInclude Include="src\STL\algorithm.hpp" />
     <ClInclude Include="src\STL\containers.hpp" />
     <ClInclude Include="src\STL\custom_queue.hpp" />
     <ClInclude Include="src\STL\custom_sortlist.hpp" />

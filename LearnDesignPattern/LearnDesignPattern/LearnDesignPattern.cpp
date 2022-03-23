@@ -17,11 +17,20 @@
 #include "src/STL/string_p.hpp"
 #include "src/STL/list_p.hpp"
 #include "src/STL/containers.hpp"
+#include "src/STL/algorithm.hpp"
+
+#include <typeinfo>
+
+template<typename T>
+void func(T iter)
+{
+    std::string name = typeid(iter).name();
+    cout << name << endl;
+}
 
 int main()
 {
-    my_list::list<int> list;
-    cout << sizeof(std::list<int>) << endl;
+    testSTLAlgorithm();
     system("pause");
 }
 
