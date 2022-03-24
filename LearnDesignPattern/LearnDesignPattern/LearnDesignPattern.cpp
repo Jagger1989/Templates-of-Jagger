@@ -27,10 +27,43 @@ void func(T iter)
     std::string name = typeid(iter).name();
     cout << name << endl;
 }
+#include <set> 
+#include <typeinfo>
+#include <chrono>
 
 int main()
 {
-    testOverrideOperator();
+    char buf[10];
+    multiset<string> my_set;
+    int size = 100000000;
+    std::chrono::time_point<chrono::system_clock> chronoTimeStart = chrono::system_clock::now();
+    for (int i = 0; i < size; i++)
+    {
+        snprintf(buf, 10, "%d", rand()); // rand() 0~32767
+        my_set.insert(buf);
+    }
+    std::chrono::time_point<chrono::system_clock> chronoTimeEnd = chrono::system_clock::now();
+    int timeDelta = static_cast<float>(chrono::duration_cast<chrono::milliseconds>(chronoTimeEnd - chronoTimeStart).count());
+    cout << timeDelta << endl;
+    string target = "12345";
+
+    chronoTimeStart = chrono::system_clock::now();
+    find(my_set.begin(), my_set.end(), target);
+    chronoTimeEnd = chrono::system_clock::now();
+
+    timeDelta = static_cast<float>(chrono::duration_cast<chrono::milliseconds>(chronoTimeEnd - chronoTimeStart).count());
+    cout << timeDelta << endl;
+
+    chronoTimeStart = chrono::system_clock::now();
+    auto it = my_set.find(target);
+    chronoTimeEnd = chrono::system_clock::now();
+    timeDelta = static_cast<float>(chrono::duration_cast<chrono::milliseconds>(chronoTimeEnd - chronoTimeStart).count());
+    if (it != my_set.end())
+    {
+        cout << "founded" << endl;
+    }
+    cout << timeDelta << endl;
+    //testOverrideOperator();
     system("pause");
 }
 
