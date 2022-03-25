@@ -227,5 +227,8 @@
     <ClInclude Include="src\STL\my_iterator.hpp">
       <Filter>STL</Filter>
     </ClInclude>
+    <ClInclude Include="src\STL\my_traits.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

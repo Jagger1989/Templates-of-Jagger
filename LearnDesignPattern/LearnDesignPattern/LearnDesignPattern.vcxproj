@@ -297,6 +297,7 @@
     <ClInclude Include="src\STL\custom_sortlist.hpp" />
     <ClInclude Include="src\STL\list_p.hpp" />
     <ClInclude Include="src\STL\my_iterator.hpp" />
+    <ClInclude Include="src\STL\my_traits.hpp" />
     <ClInclude Include="src\STL\override_operator.hpp" />
     <ClInclude Include="src\STL\set_p.hpp" />
     <ClInclude Include="src\STL\sstream_p.hpp" />

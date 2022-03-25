@@ -7,7 +7,6 @@
 
 // Template/
 #include "src/Template/placement_new.hpp"
-#include "src/Template/override_operator.hpp"
 #include "src/Template/type_cast.hpp"
 #include "src/Template/Template_String.hpp"
 #include "src/Template/Template_Functor.h"
@@ -18,6 +17,8 @@
 #include "src/STL/list_p.hpp"
 #include "src/STL/containers.hpp"
 #include "src/STL/algorithm.hpp"
+#include "src/STL/override_operator.hpp"
+#include "src/STL/my_traits.hpp"
 
 #include <typeinfo>
 
@@ -31,7 +32,7 @@ void func(T iter)
 #include <typeinfo>
 #include <chrono>
 
-int main()
+int testMain2()
 {
     char buf[10];
     multiset<string> my_set;
@@ -64,6 +65,11 @@ int main()
     }
     cout << timeDelta << endl;
     //testOverrideOperator();
+}
+
+void main()
+{
+    testMyTraits();
     system("pause");
 }
 
