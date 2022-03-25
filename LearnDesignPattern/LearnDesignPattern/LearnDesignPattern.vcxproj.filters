@@ -209,9 +209,6 @@
     <ClInclude Include="src\Other\my_deque.hpp">
       <Filter>custom_class</Filter>
     </ClInclude>
-    <ClInclude Include="src\Template\override_operator.hpp">
-      <Filter>coding_template</Filter>
-    </ClInclude>
     <ClInclude Include="src\Template\type_cast.hpp">
       <Filter>coding_template</Filter>
     </ClInclude>
@@ -219,6 +216,15 @@
       <Filter>STL</Filter>
     </ClInclude>
     <ClInclude Include="src\STL\algorithm.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\STL\set_p.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\STL\override_operator.hpp">
+      <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\STL\my_iterator.hpp">
       <Filter>STL</Filter>
     </ClInclude>
   </ItemGroup>

@@ -111,6 +111,15 @@ void testSTLContainer()
 
 
 /*
+
+Input Iterator      Output Iterator
+        \               /
+        Forward Iterator
+               |
+      Bidirectional Iterator
+               |
+      Random Access Iterator
+
 vector              随机迭代器
 array               随机迭代器
 deque               随机迭代器

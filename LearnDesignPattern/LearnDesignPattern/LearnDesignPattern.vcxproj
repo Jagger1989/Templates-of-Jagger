@@ -296,13 +296,15 @@
     <ClInclude Include="src\STL\custom_queue.hpp" />
     <ClInclude Include="src\STL\custom_sortlist.hpp" />
     <ClInclude Include="src\STL\list_p.hpp" />
+    <ClInclude Include="src\STL\my_iterator.hpp" />
+    <ClInclude Include="src\STL\override_operator.hpp" />
+    <ClInclude Include="src\STL\set_p.hpp" />
     <ClInclude Include="src\STL\sstream_p.hpp" />
     <ClInclude Include="src\STL\string_p.hpp" />
     <ClInclude Include="src\STL\stream.hpp" />
     <ClInclude Include="src\STL\ifstream_ofstream.hpp" />
     <ClInclude Include="src\STL\vector_p.hpp" />
     <ClInclude Include="src\TemplatePrograming\Template_1.h" />
-    <ClInclude Include="src\Template\override_operator.hpp" />
     <ClInclude Include="src\Template\placement_new.hpp" />
     <ClInclude Include="src\Template\Template_Deque.h" />
     <ClInclude Include="src\Template\Template_Move.hpp" />
