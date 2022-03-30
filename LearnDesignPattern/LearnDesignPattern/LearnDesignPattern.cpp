@@ -67,10 +67,27 @@ int testMain2()
     //testOverrideOperator();
 }
 
+#include <allocators>
+
 void main()
 {
-    testMyTraits();
+    //testMyTraits();
+    
+    vector<int> list(2, 1);
+    cout << list.capacity() << endl;
+    list.push_back(1);
+    cout << list.capacity() << endl;
+    list.push_back(1);
+    cout << list.capacity() << endl;
+    list.clear();
+    cout << list.capacity() << endl;
+    cout << list.size() << endl;
+
+    list.pop_back();
+    auto it1 = list.begin();
+    auto it2 = copy(it1, it1, it1);
     system("pause");
+
 }
 
 /*
