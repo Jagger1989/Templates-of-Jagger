@@ -49,7 +49,7 @@ namespace placement_new {
         // 最终使用p释放内存，p2调用析构
         p2->~A(); // 实测不主动调用p2不会走析构函数，这里要注意！！！
         // 需要释放内存，因为p是new出来的，可以这样理解：p的new和delete依然要配对使用，placement并没有new所以不需要delete
-        delete[] p;
+        ::delete p;
     }
 
     void testPlacementNew3()
