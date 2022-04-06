@@ -8,7 +8,7 @@
 // Template/
 #include "src/Template/placement_new.hpp"
 #include "src/Template/type_cast.hpp"
-#include "src/Template/Template_String.hpp"
+#include "src/Template/Template_Move.hpp"
 #include "src/Template/Template_Functor.h"
 #include "src/TemplatePrograming/Template_1.h"
 
@@ -27,6 +27,9 @@ void func(T iter)
 {
     std::string name = typeid(iter).name();
     cout << name << endl;
+
+    int x = 1;
+    int &b = x;
 }
 #include <set> 
 #include <typeinfo>
@@ -67,25 +70,24 @@ int testMain2()
     //testOverrideOperator();
 }
 
-#include <allocators>
+//#include <allocators>
+
+const int MAX = 3;
 
 void main()
 {
     //testMyTraits();
     
-    vector<int> list(2, 1);
-    cout << list.capacity() << endl;
-    list.push_back(1);
-    cout << list.capacity() << endl;
-    list.push_back(1);
-    cout << list.capacity() << endl;
-    list.clear();
-    cout << list.capacity() << endl;
-    cout << list.size() << endl;
+    //testMove();
 
-    list.pop_back();
-    auto it1 = list.begin();
-    auto it2 = copy(it1, it1, it1);
+    //list<int> l2({ 5,7,6 });
+    //int x = (int)&l2;
+    //cout << x << endl;
+    //x += 100;
+    //cout << x << endl;
+    //int* p = (int*)x;
+    //cout << *p << endl;
+
     system("pause");
 
 }

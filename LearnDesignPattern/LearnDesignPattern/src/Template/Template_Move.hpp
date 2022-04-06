@@ -7,7 +7,7 @@ void testMove()
 {
     std::string str = "Hello";
     std::vector<std::string> v;
-
+    cout << "str addr = " << &str << endl;
     // 使用 push_back(const T&) 重载，
     // 表示我们将带来复制 str 的成本
     v.push_back(str);
@@ -21,7 +21,9 @@ void testMove()
     std::cout << "After move, str is \"" << str << "\"\n";
 
     std::cout << "V[0] = " << v[0] << std::endl;
+    std::cout << "V[0] addr = " << &v[0] << std::endl;
     std::cout << "V[1] = " << v[1] << std::endl;
+    std::cout << "V[1] addr = " << &v[1] << std::endl;
 
     // 可以知道，move语义允许一个对象在特定的情形下，取得其他对象的资源。
     // 这也就是经典的右值引用，而被引用的变量被释放。
