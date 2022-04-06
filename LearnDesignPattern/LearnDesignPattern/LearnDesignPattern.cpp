@@ -39,6 +39,8 @@ void func(T iter)
 // 如果是在函数内部，那么是放在栈上，如果作为某个类的成员，那么就看这个类对象是new还是直接创建，以此类推
 // 可参考文章：https://www.cnblogs.com/liushui-sky/p/5741646.html
 
+// 什么时候用new？可参考：https://blog.csdn.net/ftfy123/article/details/104969485/
+
 int testMain2()
 {
     char buf[10];
