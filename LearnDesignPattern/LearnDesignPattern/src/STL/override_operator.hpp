@@ -35,6 +35,20 @@ public:
         return int(m_x);
     }
 
+    // 重写operator new() （此处函数体其实就是原版的operator new），注意operator new和new operator不是一个东西，new operator是我常常用的new delete那个new
+    // new operator底层会首先调用operator new(底层是malloc)来分配内存，然后调用构造函数
+    void* operator new(size_t size)
+    {
+        return malloc(size);
+    }
+
+    // 重载operator new
+    // 重载的前提是第一个参数必须位size_t，否则编译器会报错
+    void* operator new(size_t size, void* start)
+    {
+        return start;
+    }
+
     void print()
     {
         cout << "value = " << m_value << endl;

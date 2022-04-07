@@ -35,6 +35,12 @@ void func(T iter)
 #include <typeinfo>
 #include <chrono>
 
+// 不适用new，普通创建一个对象，例如 A a;那么这个对象是存放在堆上还是栈上？
+// 如果是在函数内部，那么是放在栈上，如果作为某个类的成员，那么就看这个类对象是new还是直接创建，以此类推
+// 可参考文章：https://www.cnblogs.com/liushui-sky/p/5741646.html
+
+// 什么时候用new？可参考：https://blog.csdn.net/ftfy123/article/details/104969485/
+
 int testMain2()
 {
     char buf[10];
@@ -76,17 +82,7 @@ const int MAX = 3;
 
 void main()
 {
-    //testMyTraits();
-    
-    //testMove();
-
-    //list<int> l2({ 5,7,6 });
-    //int x = (int)&l2;
-    //cout << x << endl;
-    //x += 100;
-    //cout << x << endl;
-    //int* p = (int*)x;
-    //cout << *p << endl;
+    placement_new::testPlacementNew2();
 
     system("pause");
 
