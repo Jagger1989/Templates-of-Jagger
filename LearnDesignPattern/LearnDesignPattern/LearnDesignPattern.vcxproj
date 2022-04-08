@@ -80,6 +80,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>LearnDesignPattern</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>c++17</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -273,7 +274,6 @@
     <ClCompile Include="src\Utility\FinishAction.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\C++20\c++20.hpp" />
     <ClInclude Include="src\DesignPattern\Pattern_Bridge.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Builder.h" />
     <ClInclude Include="src\DesignPattern\Pattern_Decoration.h" />

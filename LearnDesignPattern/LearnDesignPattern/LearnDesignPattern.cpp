@@ -84,6 +84,7 @@ void main()
 /*
 平台:
 GNU C++ 是linux平台上的编译工具，.Visual C++是WINDOWS上的编译工具，GNU C++更符合C++规范
+GCC——GNU Compiler Collectino GNU编译器套件，包括C、C++、Java等语言
 库 :
 GNU C++使用linux上的API, VC++使用WIN API.
 C++语法有微小的差别 :
