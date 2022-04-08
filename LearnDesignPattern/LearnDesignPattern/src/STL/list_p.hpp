@@ -2,8 +2,6 @@
 #define LIST_P_HPP
 #include "../Utility/common.h"
 
-#include <xmemory0>
-
 using namespace std;
 
 namespace my_list {

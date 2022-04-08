@@ -169,9 +169,9 @@ void testList2()
 
 void testAllocator()
 {
-    // STL底层开辟内存方式（new的底层）
-    int *p = allocator<int>().allocate(512, (int*)0);
-    allocator<int>().deallocate(p, 512);
+    // STL底层开辟内存方式
+    //int *p = allocator<int>().allocate(512, (int*)0); // c++17以后不用
+    //int *pp = allocator_traits<int>().allocate();
 }
 
 #endif // !CONTAINERS_HPP

@@ -41,49 +41,42 @@ void func(T iter)
 
 // 什么时候用new？可参考：https://blog.csdn.net/ftfy123/article/details/104969485/
 
-int testMain2()
+class TestBase {
+public:
+    virtual void testPrint()
+    {
+        printf("Test TestBase\n");
+    }
+};
+
+class TestDerived : public TestBase {
+public:
+    void testPrint()
+    {
+        printf("Test TestDerived\n");
+    }
+};
+
+void testOOP()
 {
-    char buf[10];
-    multiset<string> my_set;
-    int size = 100000000;
-    std::chrono::time_point<chrono::system_clock> chronoTimeStart = chrono::system_clock::now();
-    for (int i = 0; i < size; i++)
-    {
-        snprintf(buf, 10, "%d", rand()); // rand() 0~32767
-        my_set.insert(buf);
-    }
-    std::chrono::time_point<chrono::system_clock> chronoTimeEnd = chrono::system_clock::now();
-    int timeDelta = static_cast<float>(chrono::duration_cast<chrono::milliseconds>(chronoTimeEnd - chronoTimeStart).count());
-    cout << timeDelta << endl;
-    string target = "12345";
+    TestDerived derived;;
+    TestBase baseObj = derived;  // 对象被裁切为基类对象
+    TestBase* basePtr = &derived;
+    TestBase& baseRef = derived;
+    baseObj.testPrint();  // 调用基类
+    basePtr->testPrint(); // 调用派生类
+    baseRef.testPrint();  // 调用派生类
 
-    chronoTimeStart = chrono::system_clock::now();
-    find(my_set.begin(), my_set.end(), target);
-    chronoTimeEnd = chrono::system_clock::now();
-
-    timeDelta = static_cast<float>(chrono::duration_cast<chrono::milliseconds>(chronoTimeEnd - chronoTimeStart).count());
-    cout << timeDelta << endl;
-
-    chronoTimeStart = chrono::system_clock::now();
-    auto it = my_set.find(target);
-    chronoTimeEnd = chrono::system_clock::now();
-    timeDelta = static_cast<float>(chrono::duration_cast<chrono::milliseconds>(chronoTimeEnd - chronoTimeStart).count());
-    if (it != my_set.end())
-    {
-        cout << "founded" << endl;
-    }
-    cout << timeDelta << endl;
-    //testOverrideOperator();
+    TestBase* P = new TestDerived();
+    P->testPrint();
+    P->TestBase::testPrint();
 }
 
-//#include <allocators>
-
-const int MAX = 3;
 
 void main()
 {
-    placement_new::testPlacementNew2();
-
+    testOOP();
+    //placement_new::testPlacementNew2();
     system("pause");
 
 }
@@ -94,5 +87,5 @@ GNU C++ 是linux平台上的编译工具，.Visual C++是WINDOWS上的编译工�
 库 :
 GNU C++使用linux上的API, VC++使用WIN API.
 C++语法有微小的差别 :
-这里仅仅拿VC6来说明， VC6由于某种原因, 不能很好支持C++新标准, 而GNU C++是完全支持的.
+VC6由于某种原因, 不能很好支持C++新标准, 而GNU C++是完全支持的.
 */

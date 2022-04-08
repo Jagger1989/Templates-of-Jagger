@@ -40,6 +40,9 @@
     <Filter Include="coding_template">
       <UniqueIdentifier>{4a572edd-58fb-4f9c-8e4a-a5f253a8703b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="c++20">
+      <UniqueIdentifier>{07286e95-6545-41de-a77f-eb15914e74ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LearnDesignPattern.cpp">
@@ -229,6 +232,9 @@
     </ClInclude>
     <ClInclude Include="src\STL\my_traits.hpp">
       <Filter>STL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\C++20\c++20.hpp">
+      <Filter>c++20</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
