@@ -72,11 +72,12 @@ void testOOP()
     P->TestBase::testPrint();
 }
 
-
+#include <queue>
 void main()
 {
     testOOP();
     //placement_new::testPlacementNew2();
+    std::deque<int> deq{ 3, 1, 4, 1, 5 };
     system("pause");
 
 }
