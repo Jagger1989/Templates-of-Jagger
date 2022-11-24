@@ -15,6 +15,7 @@ kzbuild/
 design_assets/
 Tool_project/Application Player/
 Binary/
+LearnDesignPattern/
 
 # Files
 *.lock
