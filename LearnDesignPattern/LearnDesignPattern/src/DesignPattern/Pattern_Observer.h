@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../Utility/common.h"
+#include "common.h"
 
 class Notify
 {

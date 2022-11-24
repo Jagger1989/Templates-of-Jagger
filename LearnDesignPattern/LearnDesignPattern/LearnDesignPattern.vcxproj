@@ -131,7 +131,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\environment\boost_1_78_0;$(IncludePath)</IncludePath>
+    <IncludePath>D:\WorkSpace--VisualStudio\Templates-of-Jagger\LearnDesignPattern\LearnDesignPattern\src\Utility;D:\environment\boost_1_78_0;$(IncludePath)</IncludePath>
     <LibraryPath>D:\environment\boost_1_78_0\stage\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -221,6 +221,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="LearnDesignPattern.cpp" />
+    <ClCompile Include="src\Template\Template_TypeCast.cpp" />
     <ClCompile Include="src\Utility\FinishAction.cpp" />
   </ItemGroup>
   <ItemGroup>

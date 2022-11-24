@@ -36,6 +36,9 @@
     <ClCompile Include="src\Utility\FinishAction.cpp">
       <Filter>common</Filter>
     </ClCompile>
+    <ClCompile Include="src\Template\Template_TypeCast.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\DesignPattern\Factory - 副本 (2).h">

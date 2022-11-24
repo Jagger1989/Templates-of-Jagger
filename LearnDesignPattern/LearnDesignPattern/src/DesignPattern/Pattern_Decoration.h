@@ -1,6 +1,6 @@
 #pragma once
-#include "../Utility/common.h"
-#include "../Utility/Log.h"
+#include "common.h"
+#include "Log.h"
 #include <Windows.h>
 
 // в╟йндёй╫

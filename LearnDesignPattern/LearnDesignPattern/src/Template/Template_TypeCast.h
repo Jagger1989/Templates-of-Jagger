@@ -20,8 +20,34 @@ private:
 class C : public AA,  public BB
 {
 public:
+    C() = default;
+
+    C(int x) : m_value(x)
+    {
+
+    }
+
+    // 重写类型转换运算符
+    operator int() const
+    {
+        printf("Called int type cast\n");
+        printf("m_value ======= %d\n", m_value);
+        return m_value;
+    }
+
+    operator double() const
+    {
+        return 0.5f;
+    }
+
+    void printValue()
+    {
+        printf("Called double type cast\n");
+        printf("m_value = %d\n", m_value);
+    }
 
 private:
+    int m_value = 0;
 };
 
 void testTypeCast()
@@ -79,6 +105,14 @@ void testTypeCast()
     {
         
     }
+
+    // 5. 重写自动类型转换
+    C cc(10);
+    cc.printValue();
+    int x = cc;
+    double y = cc;
+    printf("x = %d\n", x);
+    printf("y = %.2f\n", y);
 }
 
 #endif // !TYPE_CAST_H

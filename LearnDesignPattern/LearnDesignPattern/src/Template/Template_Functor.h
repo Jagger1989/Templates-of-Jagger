@@ -3,6 +3,7 @@
 
 #include "../Utility/common.h"
 #include <algorithm>
+using namespace std;
 // ·Âº¯Êý
 class Func {
 public:
