@@ -31,69 +31,124 @@
             this.SendBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SendMsg = new System.Windows.Forms.TextBox();
-            this.sendedMsg = new System.Windows.Forms.TextBox();
-            this.sendFromTexbox = new System.Windows.Forms.Button();
+            this.messageLog = new System.Windows.Forms.TextBox();
+            this.clearLog = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SendBtn
             // 
-            this.SendBtn.Location = new System.Drawing.Point(40, 112);
+            this.SendBtn.Location = new System.Drawing.Point(40, 17);
             this.SendBtn.Name = "SendBtn";
             this.SendBtn.Size = new System.Drawing.Size(75, 23);
             this.SendBtn.TabIndex = 0;
             this.SendBtn.Text = "Send";
             this.SendBtn.UseVisualStyleBackColor = true;
-            this.SendBtn.Click += new System.EventHandler(this.sendFromFile);
+            this.SendBtn.Click += new System.EventHandler(this.sendMsg);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(153, 112);
+            this.button2.Location = new System.Drawing.Point(149, 17);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
-            this.button2.Text = "load data";
+            this.button2.Text = "Load Data";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.loadData);
             // 
             // SendMsg
             // 
-            this.SendMsg.Location = new System.Drawing.Point(40, 200);
+            this.SendMsg.AllowDrop = true;
+            this.SendMsg.Location = new System.Drawing.Point(40, 60);
             this.SendMsg.Multiline = true;
             this.SendMsg.Name = "SendMsg";
+            this.SendMsg.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.SendMsg.Size = new System.Drawing.Size(500, 450);
             this.SendMsg.TabIndex = 2;
+            this.SendMsg.WordWrap = false;
+            this.SendMsg.TextChanged += new System.EventHandler(this.SendMsg_TextChanged);
+            this.SendMsg.DragDrop += new System.Windows.Forms.DragEventHandler(this.sendMsgOnDD);
+            this.SendMsg.DragEnter += new System.Windows.Forms.DragEventHandler(this.sendMsgOnDE);
             // 
-            // sendedMsg
+            // messageLog
             // 
-            this.sendedMsg.Location = new System.Drawing.Point(640, 200);
-            this.sendedMsg.Multiline = true;
-            this.sendedMsg.Name = "sendedMsg";
-            this.sendedMsg.Size = new System.Drawing.Size(500, 450);
-            this.sendedMsg.TabIndex = 3;
+            this.messageLog.Location = new System.Drawing.Point(640, 60);
+            this.messageLog.Multiline = true;
+            this.messageLog.Name = "messageLog";
+            this.messageLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.messageLog.Size = new System.Drawing.Size(500, 450);
+            this.messageLog.TabIndex = 3;
             // 
-            // sendFromTexbox
+            // clearLog
             // 
-            this.sendFromTexbox.Location = new System.Drawing.Point(40, 153);
-            this.sendFromTexbox.Name = "sendFromTexbox";
-            this.sendFromTexbox.Size = new System.Drawing.Size(75, 23);
-            this.sendFromTexbox.TabIndex = 4;
-            this.sendFromTexbox.Text = "Send Box";
-            this.sendFromTexbox.UseVisualStyleBackColor = true;
-            this.sendFromTexbox.Click += new System.EventHandler(this.sendFromTextbox_Click);
+            this.clearLog.Location = new System.Drawing.Point(640, 17);
+            this.clearLog.Name = "clearLog";
+            this.clearLog.Size = new System.Drawing.Size(75, 23);
+            this.clearLog.TabIndex = 4;
+            this.clearLog.Text = "Clear";
+            this.clearLog.UseVisualStyleBackColor = true;
+            this.clearLog.Click += new System.EventHandler(this.onClearLog);
+            // 
+            // label1
+            // 
+            this.label1.AllowDrop = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(256, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 12);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Command";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(877, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(23, 12);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Log";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(258, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Clear";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.onLCClick);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(1067, 17);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "Help";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.onHelpClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1184, 761);
-            this.Controls.Add(this.sendFromTexbox);
-            this.Controls.Add(this.sendedMsg);
+            this.ClientSize = new System.Drawing.Size(1184, 531);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.clearLog);
+            this.Controls.Add(this.messageLog);
             this.Controls.Add(this.SendMsg);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.SendBtn);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "UdpSimulator";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,8 +159,12 @@
         private System.Windows.Forms.Button SendBtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox SendMsg;
-        private System.Windows.Forms.TextBox sendedMsg;
-        private System.Windows.Forms.Button sendFromTexbox;
+        private System.Windows.Forms.TextBox messageLog;
+        private System.Windows.Forms.Button clearLog;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }
 

@@ -1,5 +1,6 @@
 ﻿#include <stdio.h>
 #include <winsock2.h>
+#include <locale>
 
 #pragma comment(lib, "ws2_32.lib")
 
@@ -65,6 +66,9 @@ int main()
         int retNum = 0;
         memset(RecvBuffer, 0, 100);
         retNum = recvfrom(sockfd, RecvBuffer, 100, 0, (SOCKADDR *)&caddr, &length);
+
+        //std::wstring_convert<std::codecvt_utf8<wchar_t>, wchar_t> converter;
+
         if (retNum <= 0)
         {
             printf("time: %s\n", getLocalTime());

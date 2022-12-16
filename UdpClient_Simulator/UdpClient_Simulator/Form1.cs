@@ -18,7 +18,6 @@ namespace UdpClient_Simulator
     {
         private Socket m_UdpClient = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
         private EndPoint m_ServerPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 55555);
-        private string m_msg = "Empty message !";
         private string m_SileContent = string.Empty;
         private string m_FilePath = string.Empty;
 
@@ -27,27 +26,31 @@ namespace UdpClient_Simulator
             InitializeComponent();
         }
 
-        private void sendFromFile(object sender, EventArgs e)
-        {
-            if (m_FilePath == "")
-            {
-                MessageBox.Show("Please load data file first !");
-                return;
-            }
-            FileStream fs = new FileStream(m_FilePath, FileMode.Open, FileAccess.Read);
-            byte[] data = new byte[fs.Length];
-            fs.Read(data, 0, data.Length);
-            m_UdpClient.SendTo(data, m_ServerPoint);
-            m_msg = Encoding.UTF8.GetString(data);
-            SendMsg.Text = m_msg;
-            sendedMsg.AppendText("\r\n");
-            sendedMsg.AppendText(m_msg);
-            fs.Close();
-        }
-
         ~Form1()
         {
             m_UdpClient.Close();
+        }
+
+        private void sendMsg(object sender, EventArgs e)
+        {
+            string msg = SendMsg.Text;
+            if (msg.Length == 0)
+            {
+                MessageBox.Show("Message is empty !");
+                return;
+            }
+
+            //MessageBox.Show(msg);
+
+            //if (msg.Length > 1024)
+            //{
+            //    MessageBox.Show("Message is oversize !(" + msg.Length + " > Max 1024)");
+            //    return;
+            //}
+
+            m_UdpClient.SendTo(Encoding.UTF8.GetBytes(msg), m_ServerPoint);
+            messageLog.AppendText(msg);
+            messageLog.AppendText("\r\n");
         }
 
         private void loadData(object sender, EventArgs e)
@@ -63,18 +66,80 @@ namespace UdpClient_Simulator
                 {
                     //Get the path of specified file
                     m_FilePath = openFileDialog.FileName;
+                    readFileToTextBox();
                 }
             }
         }
 
-        private void sendFromTextbox_Click(object sender, EventArgs e)
+        private void readFileToTextBox( )
         {
+            if (!File.Exists(m_FilePath))
+            {
+                MessageBox.Show("File not exists !");
+            }
 
+            try
+            {
+                using (FileStream fs = new FileStream(m_FilePath, FileMode.Open, FileAccess.Read))
+                {
+                    byte[] bytes = new byte[fs.Length];
+                    fs.Read(bytes, 0, bytes.Length);
+                    SendMsg.Text = Encoding.UTF8.GetString(bytes);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Open file failed !");
+            }
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SendMsg_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void onClearLog(object sender, EventArgs e)
+        {
+            messageLog.Text = "";
+        }
+
+        private void sendMsgOnDE(object sender, DragEventArgs e)
+        {
+            if(e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                e.Effect = DragDropEffects.Link;
+            }
+            else
+            {
+                e.Effect = DragDropEffects.None;
+            }
+        }
+
+        private void sendMsgOnDD(object sender, DragEventArgs e)
+        {
+            m_FilePath = ((System.Array)e.Data.GetData(DataFormats.FileDrop)).GetValue(0).ToString();
+            readFileToTextBox();
+        }
+
+        private void onLCClick(object sender, EventArgs e)
+        {
+            SendMsg.Text = "";
+        }
+
+        private void onHelpClick(object sender, EventArgs e)
+        {
+            string msg = "step 1: Load data file or drag data file to the Command box. \r\nstep 2: Click send.";
+            MessageBox.Show(msg);
         }
     }
 }
