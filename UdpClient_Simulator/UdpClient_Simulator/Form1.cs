@@ -18,8 +18,10 @@ namespace UdpClient_Simulator
     {
         private Socket m_UdpClient = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
         private EndPoint m_ServerPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 55555);
+        private AutoSizeFormClass asfc = new AutoSizeFormClass();
         private string m_SileContent = string.Empty;
         private string m_FilePath = string.Empty;
+        private string m_data = string.Empty;
 
         public Form1()
         {
@@ -33,8 +35,7 @@ namespace UdpClient_Simulator
 
         private void sendMsg(object sender, EventArgs e)
         {
-            string msg = SendMsg.Text;
-            if (msg.Length == 0)
+            if (m_data.Length == 0)
             {
                 MessageBox.Show("Message is empty !");
                 return;
@@ -48,8 +49,8 @@ namespace UdpClient_Simulator
             //    return;
             //}
 
-            m_UdpClient.SendTo(Encoding.UTF8.GetBytes(msg), m_ServerPoint);
-            messageLog.AppendText(msg);
+            m_UdpClient.SendTo(Encoding.UTF8.GetBytes(m_data), m_ServerPoint);
+            messageLog.AppendText(m_data);
             messageLog.AppendText("\r\n");
         }
 
@@ -84,7 +85,8 @@ namespace UdpClient_Simulator
                 {
                     byte[] bytes = new byte[fs.Length];
                     fs.Read(bytes, 0, bytes.Length);
-                    SendMsg.Text = Encoding.UTF8.GetString(bytes);
+                    m_data = Encoding.UTF8.GetString(bytes);
+                    SendMsg.Text = m_data;
                 }
             }
             catch
@@ -93,19 +95,14 @@ namespace UdpClient_Simulator
             }
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            asfc.controllInitializeSize(this);
         }
 
         private void SendMsg_TextChanged(object sender, EventArgs e)
         {
-
+            m_data = SendMsg.Text;
         }
 
         private void onClearLog(object sender, EventArgs e)
@@ -127,7 +124,7 @@ namespace UdpClient_Simulator
 
         private void sendMsgOnDD(object sender, DragEventArgs e)
         {
-            m_FilePath = ((System.Array)e.Data.GetData(DataFormats.FileDrop)).GetValue(0).ToString();
+            m_FilePath = ((Array)e.Data.GetData(DataFormats.FileDrop)).GetValue(0).ToString();
             readFileToTextBox();
         }
 
@@ -140,6 +137,11 @@ namespace UdpClient_Simulator
         {
             string msg = "step 1: Load data file or drag data file to the Command box. \r\nstep 2: Click send.";
             MessageBox.Show(msg);
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            asfc.controlAutoSize(this);
         }
     }
 }

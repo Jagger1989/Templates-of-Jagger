@@ -66,7 +66,7 @@
             this.SendMsg.Multiline = true;
             this.SendMsg.Name = "SendMsg";
             this.SendMsg.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.SendMsg.Size = new System.Drawing.Size(500, 450);
+            this.SendMsg.Size = new System.Drawing.Size(330, 450);
             this.SendMsg.TabIndex = 2;
             this.SendMsg.WordWrap = false;
             this.SendMsg.TextChanged += new System.EventHandler(this.SendMsg_TextChanged);
@@ -75,16 +75,16 @@
             // 
             // messageLog
             // 
-            this.messageLog.Location = new System.Drawing.Point(640, 60);
+            this.messageLog.Location = new System.Drawing.Point(400, 60);
             this.messageLog.Multiline = true;
             this.messageLog.Name = "messageLog";
             this.messageLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.messageLog.Size = new System.Drawing.Size(500, 450);
+            this.messageLog.Size = new System.Drawing.Size(350, 450);
             this.messageLog.TabIndex = 3;
             // 
             // clearLog
             // 
-            this.clearLog.Location = new System.Drawing.Point(640, 17);
+            this.clearLog.Location = new System.Drawing.Point(400, 12);
             this.clearLog.Name = "clearLog";
             this.clearLog.Size = new System.Drawing.Size(75, 23);
             this.clearLog.TabIndex = 4;
@@ -96,7 +96,7 @@
             // 
             this.label1.AllowDrop = true;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(256, 45);
+            this.label1.Location = new System.Drawing.Point(164, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 12);
             this.label1.TabIndex = 5;
@@ -105,7 +105,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(877, 45);
+            this.label2.Location = new System.Drawing.Point(565, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(23, 12);
             this.label2.TabIndex = 6;
@@ -136,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1184, 531);
+            this.ClientSize = new System.Drawing.Size(784, 531);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -149,6 +149,7 @@
             this.Name = "Form1";
             this.Text = "UdpSimulator";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
