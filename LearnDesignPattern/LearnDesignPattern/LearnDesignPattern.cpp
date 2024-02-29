@@ -21,18 +21,20 @@ int main()
     //testTypeCast();
 
 
-    Test000001 test;
-    Test000001* ptr = &test;
-    int Test000001::* po = &Test000001::object;
-    test.*po;
-    ptr->*po;
-    void(Test000001::*pf)(int) = &Test000001::function;
-    (test.*pf)(0);
-    (ptr->*pf)(0);
+    //Test000001 test;
+    //Test000001* ptr = &test;
+    //int Test000001::* po = &Test000001::object;
+    //test.*po;
+    //ptr->*po;
+    //void(Test000001::*pf)(int) = &Test000001::function;
+    //(test.*pf)(0);
+    //(ptr->*pf)(0);
 
 
-    int ret = MAX(1, 2);
-    printf("ret = %d\n", ret);
+    //int ret = MAX(1, 2);
+    //printf("ret = %d\n", ret);
+
+    testTypeCast2();
 
     system("pause");
 }

@@ -115,4 +115,38 @@ void testTypeCast()
     printf("y = %.2f\n", y);
 }
 
+class BBB {
+public:
+    BBB(int v)
+    {
+        m_v = v;
+    }
+
+    int m_v;
+
+};
+
+class AAA {
+public:
+    AAA(int v)
+    {
+        m_v = v;
+    }
+
+    operator BBB() const
+    {
+        return BBB(m_v);
+    }
+    
+    int m_v;
+};
+
+void testTypeCast2()
+{
+    AAA a(10);
+    BBB b(5);
+    b = a;
+    std::cout << b.m_v << std::endl;
+}
+
 #endif // !TYPE_CAST_H

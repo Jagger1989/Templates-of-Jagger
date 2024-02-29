@@ -131,14 +131,32 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\WorkSpace--VisualStudio\Templates-of-Jagger\LearnDesignPattern\LearnDesignPattern\src\Utility;D:\environment\boost_1_78_0;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\environment\boost_1_78_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\WorkSpace--VisualStudio\Templates-of-Jagger\LearnDesignPattern\LearnDesignPattern\src\Utility;D:\Environment\boost_1_84_0;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Environment\boost_1_84_0\stage\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>D:\Environment\boost_1_84_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\WorkSpace--VisualStudio\Templates-of-Jagger\LearnDesignPattern\LearnDesignPattern\src\Utility;D:\Environment\boost_1_84_0;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='aaaaaa|x64'">
+    <LibraryPath>D:\Environment\boost_1_84_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\WorkSpace--VisualStudio\Templates-of-Jagger\LearnDesignPattern\LearnDesignPattern\src\Utility;D:\Environment\boost_1_84_0;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RDLL|x64'">
+    <LibraryPath>D:\Environment\boost_1_84_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\WorkSpace--VisualStudio\Templates-of-Jagger\LearnDesignPattern\LearnDesignPattern\src\Utility;D:\Environment\boost_1_84_0;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <LibraryPath>D:\Environment\boost_1_84_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\WorkSpace--VisualStudio\Templates-of-Jagger\LearnDesignPattern\LearnDesignPattern\src\Utility;D:\Environment\boost_1_84_0;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='vvvv|x64'">
+    <LibraryPath>D:\Environment\boost_1_84_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\WorkSpace--VisualStudio\Templates-of-Jagger\LearnDesignPattern\LearnDesignPattern\src\Utility;D:\Environment\boost_1_84_0;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
