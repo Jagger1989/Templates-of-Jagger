@@ -6,6 +6,8 @@
 #include "src/Template//Template_Move.hpp"
 #include "src/Template//Template_String.hpp"
 #include "src/Template/Template_TypeCast.h"
+#include "src/Template/Template_Functor.h"
+#include "src/DesignPattern/Pattern_Singleton_2.h"
 
 #define MAX(a, b) { a > b ? a : b }
 
@@ -34,7 +36,8 @@ int main()
     //int ret = MAX(1, 2);
     //printf("ret = %d\n", ret);
 
-    testTypeCast2();
+    //testTypeCast2();
+    testSingleton();
 
     system("pause");
 }

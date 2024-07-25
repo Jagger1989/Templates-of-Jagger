@@ -18,10 +18,15 @@ private:
 };
 
 // 可传仿函数的函数
+/*
+总的来说，class 和 typename 在模板参数声明上几乎是等效的，
+但为了保持代码的一致性和可读性，一般建议按照约定使用 class 来声明类类型模板参数，
+使用 typename 来声明非类类型模板参数。
+*/
 template<class _T>
-void testffff(_T func)
+void testffff(_T func, const string& str)
 {
-    func("Hello");
+    func(str);
 }
 
 void testFunctor1()
@@ -30,7 +35,7 @@ void testFunctor1()
     myFunc("Hello");
 
     Func("testFunctor1");
-    testffff(Func("testFunctor1"));
+    testffff(Func("testFunctor1"), "Bye");
 }
 
 // 应用场景
